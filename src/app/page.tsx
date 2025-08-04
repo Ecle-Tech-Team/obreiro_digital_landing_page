@@ -2,6 +2,10 @@ import React from "react";
 import Header from "./components/header/header";
 import Image from "next/image";
 import { Check } from "lucide-react";
+import { ChartColumn } from "lucide-react";
+import { Rocket } from "lucide-react";
+import { ContactRound } from "lucide-react";
+import { Album } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -12,10 +16,10 @@ export default function Home() {
 
       <section className=" h-[60vh] w-auto flex flex-col items-center font-(family-name:--font-poppins)">
         <div className="text-center font-extrabold mt-[5vh]">
-          <h1 className="text-4xl flex justify-center text-[#1E1E1E]">
+          <h1 className="text-5xl flex justify-center text-[#1E1E1E]">
             Eleve sua gestão com o
           </h1>
-          <h1 className="text-4xl flex justify-center text-[#5271FF] mt-1">
+          <h1 className="text-5xl flex justify-center text-[#5271FF] mt-1">
             Obreiro Digital
           </h1>
         </div>
@@ -41,7 +45,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center">
+      <section className="flex flex-col items-center mb-11">
         <Card className="w-[45vh] flex justify-center">
           <CardContent className="flex justify-center">
             <Image
@@ -100,26 +104,103 @@ export default function Home() {
         </Card>
       </section>
 
-      <section>
-        <Card className="w-[45vh]">
-          <CardContent className="w-full flex flex-col">
-            <h1 className="text-3xl flex  justify-center font-bold text-[#1E1E1E]">
-              Por que o <span className="text-[#5271FF]">Obreiro Digital</span>
-            </h1>
-            <h3 className="font-(family-name:--font-nunito) font-bold text-[#1E1E1E]">
-              Temos como missão não só entregar recursos e eficiência na gestão
-              de igrejas, queremos elevar o{" "}
-              <span className="text-[#5271FF]">nível da obra do Senhor.</span>
-              <br />
-              <br />
-              Usar o Obreiro Digital não é apenas adquirir um sistema bonito,
-              será <span className="text-[#5271FF]">capacitar</span> Pastores e
-              Obreiros para trabalharem na obra do Senhor da melhor maneira
-              possível.
-            </h3>
-            <Button>Conheça o Projeto</Button>
-          </CardContent>
-        </Card>
+      <section className="flex flex-col items-center mb-11 font-(family-name:--font-poppins)">
+        <div>
+          <Card className="w-[45vh]">
+            <CardContent className="">
+              <div className="w-full flex flex-col">
+                <h1 className="text-5xl pt-8 pb-10 font-bold text-[#1E1E1E]">
+                  Por que o
+                  <br />
+                  <span className="text-[#5271FF]">Obreiro Digital?</span>
+                </h1>
+                <h3 className="font-(family-name:--font-nunito) font-bold text-[#1E1E1E]">
+                  Temos como missão não só entregar recursos e eficiência na
+                  gestão de igrejas, queremos elevar o{" "}
+                  <span className="text-[#5271FF]">
+                    nível da obra do Senhor.
+                  </span>
+                  <br />
+                  <br />
+                  Usar o Obreiro Digital não é apenas adquirir um sistema
+                  bonito, será <span className="text-[#5271FF]">
+                    capacitar
+                  </span>{" "}
+                  Pastores e Obreiros para trabalharem na obra do Senhor da
+                  melhor maneira possível.
+                </h3>
+              </div>
+
+              <div>
+                <Button className="bg-[#5271FF] mt-11 w-[21vh] text-md">
+                  Conheça o Projeto
+                </Button>
+              </div>
+
+              <Card className="mt-25 w-[35vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+                <CardContent>
+                  <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
+                    <ChartColumn />
+                  </div>
+                  <h1 className="text-2xl font-bold mt-4 mb-6">
+                    Gestão Via Dados
+                  </h1>
+                  <p>
+                    Controle e histórico completo de tudo o que acontece na sua
+                    igreja, garantindo uma gestão mais inteligente e preparada
+                    para avanços da sociedade
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="mt-11 w-[35vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+                <CardContent>
+                  <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
+                    <Rocket />
+                  </div>
+                  <h1 className="text-2xl font-bold mt-4 mb-6">
+                    Eficiência e Agilidade
+                  </h1>
+                  <p>
+                    O Obreiro Digital trará a segurança de que a obra do Senhor
+                    está eficiente e ágil para Pastores e Líderes de Igreja.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="mt-11 w-[35vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+                <CardContent>
+                  <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
+                    <ContactRound />
+                  </div>
+                  <h1 className="text-2xl font-bold mt-4 mb-6">
+                    Experiência do Usuário
+                  </h1>
+                  <p>
+                    Garantiremos a melhor experiência de usuário para que seja
+                    fácil usar o sistema independente do nível técnico
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="mt-11 w-[35vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+                <CardContent>
+                  <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
+                    <Album />
+                  </div>
+                  <h1 className="text-2xl font-bold mt-4 mb-6">
+                    Alfabetização Digital
+                  </h1>
+                  <p>
+                    Conhecemos a falta de acesso e conhecimento em tecnologia de
+                    alguns irmãos, sabendo disso, daremos todo o suporte
+                    necessário em todas áreas.
+                  </p>
+                </CardContent>
+              </Card>
+            </CardContent>
+          </Card>
+        </div>
       </section>
     </main>
   );
