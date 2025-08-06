@@ -6,8 +6,16 @@ import { ChartColumn } from "lucide-react";
 import { Rocket } from "lucide-react";
 import { ContactRound } from "lucide-react";
 import { Album } from "lucide-react";
+import { Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Home() {
   return (
@@ -104,10 +112,10 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="flex flex-col items-center mb-11 font-(family-name:--font-poppins)">
+      <section className="flex flex-col items-center mt-[12vh]  mb-11 font-(family-name:--font-poppins)">
         <div>
-          <Card className="w-[45vh]">
-            <CardContent className="">
+          <Card className="w-[45vh] rounded-4xl">
+            <CardContent className="flex items-center flex-col">
               <div className="w-full flex flex-col">
                 <h1 className="text-5xl pt-8 pb-10 font-bold text-[#1E1E1E]">
                   Por que o
@@ -201,6 +209,209 @@ export default function Home() {
             </CardContent>
           </Card>
         </div>
+      </section>
+
+      <section className="flex flex-col jutify-center items-center font-(family-name:--font-poppins)">
+        <Card className="w-[40vh] rounded-4xl h-auto bg-[#5271FF] mb-20">
+          <CardContent>
+            <div className="text-white text-center flex flex-col items-center font-bold">
+              <h3 className="text-lg font-medium">Pastores e Líderes</h3>
+              <h1 className="text-4xl ">Recursos de</h1>
+              <h1 className="text-[#5271FF] bg-white w-auto text-4xl rounded-lg pr-1 pl-1 ">
+                Gestão
+              </h1>
+            </div>
+
+            <Carousel className="mt-9 ">
+              <CarouselContent className="w-auto">
+                <CarouselItem className="bg-white h-auto rounded-3xl flex flex-col items-center">
+                  <h1 className="font-bold text-lg">Membros e Departamentos</h1>
+                  <Image
+                    alt="Obreiro Digital"
+                    src="/carousel.png"
+                    height={120}
+                    width={800}
+                  />
+                  <p>
+                    Gerencie todos os dados e informações de todos os membros e
+                    departamentos da sua igreja.
+                  </p>
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    alt="Obreiro Digital"
+                    src="/inicio_page.png"
+                    height={750}
+                    width={1200}
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    alt="Obreiro Digital"
+                    src="/inicio_page.png"
+                    height={750}
+                    width={1200}
+                  />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+
+            <div className="mt-8 flex justify-center">
+              <Button className="bg-[#5271FF] border-2">
+                Veja uma Demonstração
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className=" h-auto w-[40vh] bg-[#5271FF] rounded-4xl mb-20">
+          <CardContent>
+            <div className="text-white text-center flex flex-col items-center font-bold">
+              <h3 className="text-lg font-medium">Pastores e Líderes</h3>
+              <h1 className="text-4xl ">Recursos de</h1>
+              <h1 className="text-[#5271FF] bg-white w-auto text-4xl rounded-lg pr-1 pl-1 ">
+                Apoio
+              </h1>
+            </div>
+
+            <Carousel className="mt-9 ">
+              <CarouselContent className="w-auto">
+                <CarouselItem className="bg-white h-auto rounded-3xl flex flex-col items-center">
+                  <h1 className="font-bold text-lg">Gestão de Visitantes</h1>
+                  <Image
+                    className="w-[10vh]"
+                    alt="Obreiro Digital"
+                    src="/Visitantes - Obreiro.png"
+                    height={100}
+                    width={800}
+                  />
+                  <p>
+                    Registre as informações de todas as pessoas que visitaram a
+                    sua igreja.
+                  </p>
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    alt="Obreiro Digital"
+                    src="/inicio_page.png"
+                    height={120}
+                    width={800}
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    alt="Obreiro Digital"
+                    src="/inicio_page.png"
+                    height={750}
+                    width={1200}
+                  />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+
+            <div className="mt-8 flex justify-center">
+              <Button className="bg-[#5271FF] border-2">
+                Veja uma Demonstração
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className=" flex flex-col items-center font-(family-name:--font-poppins) text-[#1E1E1E]">
+        <Card className="w-[40vh] rounded-4xl">
+          <CardContent className="mt-9 mb-9">
+            <div className="text-center flex flex-col items-center">
+              <h3 className="text-[#676767] font-semibold text-xl">
+                O que os usuários acharam?
+              </h3>
+              <h1 className="text-4xl font-bold mb-3">
+                {" "}
+                Confiado em <span className="text-[#5271FF]">Igrejas</span>
+              </h1>
+              <p className="text-sm w-48 mb-11">
+                Feedback de alguns usuários que utilizaram o Obreiro Digital em
+                suas igrejas:
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <Card className="bg-[#F5F5F5] w-[32vh] mb-11 shadow-md">
+                <CardContent className="">
+                  <h1 className="text-2xl font-bold mb-5">Gestão Via Dados</h1>
+                  <h3 className=" mb-15">
+                    “Controle e histórico completo de tudo o que acontece na sua
+                    igreja, garantindo”
+                  </h3>
+
+                  <div className="flex">
+                    <Star className="text-[#FFCB69]" />
+                    <Star className="text-[#FFCB69]" />
+                    <Star className="text-[#FFCB69]" />
+                    <Star className="text-[#FFCB69]" />
+                    <Star className="text-[#FFCB69]" />
+                    <p className="ml-3">5 de 5</p>
+                  </div>
+
+                  <div className="font-semibold mt-5">
+                    <h2 className="mb-1">Pastor Adilson Lira</h2>
+                    <h2>Assembléia de Deus Belém 47</h2>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#F5F5F5] w-[32vh] mb-11 shadow-md">
+                <CardContent className="">
+                  <h1 className="text-2xl font-bold mb-5">Gestão Via Dados</h1>
+                  <h3 className=" mb-15">
+                    “Controle e histórico completo de tudo o que acontece na sua
+                    igreja, garantindo”
+                  </h3>
+
+                  <div className="flex">
+                    <Star className="text-[#FFCB69]" />
+                    <Star className="text-[#FFCB69]" />
+                    <Star className="text-[#FFCB69]" />
+                    <Star className="text-[#FFCB69]" />
+                    <Star className="text-[#FFCB69]" />
+                    <p className="ml-3">5 de 5</p>
+                  </div>
+
+                  <div className="font-semibold mt-5">
+                    <h2 className="mb-1">Pastor Adilson Lira</h2>
+                    <h2>Assembléia de Deus Belém 47</h2>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#F5F5F5] w-[32vh] shadow-md">
+                <CardContent className="">
+                  <h1 className="text-2xl font-bold mb-5">Gestão Via Dados</h1>
+                  <h3 className=" mb-15">
+                    “Controle e histórico completo de tudo o que acontece na sua
+                    igreja, garantindo”
+                  </h3>
+
+                  <div className="flex">
+                    <Star className="text-[#FFCB69]" />
+                    <Star className="text-[#FFCB69]" />
+                    <Star className="text-[#FFCB69]" />
+                    <Star className="text-[#FFCB69]" />
+                    <Star className="text-[#FFCB69]" />
+                    <p className="ml-3">5 de 5</p>
+                  </div>
+
+                  <div className="font-semibold mt-5">
+                    <h2 className="mb-1">Pastor Adilson Lira</h2>
+                    <h2>Assembléia de Deus Belém 47</h2>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </CardContent>
+        </Card>
       </section>
     </main>
   );
