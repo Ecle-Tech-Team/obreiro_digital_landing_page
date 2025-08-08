@@ -7,6 +7,7 @@ import { Rocket } from "lucide-react";
 import { ContactRound } from "lucide-react";
 import { Album } from "lucide-react";
 import { Star } from "lucide-react";
+import { MoveDown } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -114,7 +115,7 @@ export default function Home() {
 
       <section className="flex flex-col items-center mt-[12vh]  mb-11 font-(family-name:--font-poppins)">
         <div>
-          <Card className="w-[45vh] rounded-4xl">
+          <Card className="w-[40vh] rounded-4xl">
             <CardContent className="flex items-center flex-col">
               <div className="w-full flex flex-col">
                 <h1 className="text-5xl pt-8 pb-10 font-bold text-[#1E1E1E]">
@@ -145,7 +146,7 @@ export default function Home() {
                 </Button>
               </div>
 
-              <Card className="mt-25 w-[35vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+              <Card className="mt-25 w-[30vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
                 <CardContent>
                   <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
                     <ChartColumn />
@@ -161,7 +162,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="mt-11 w-[35vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+              <Card className="mt-11 w-[30vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
                 <CardContent>
                   <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
                     <Rocket />
@@ -176,7 +177,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="mt-11 w-[35vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+              <Card className="mt-11 w-[30vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
                 <CardContent>
                   <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
                     <ContactRound />
@@ -191,7 +192,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="mt-11 w-[35vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+              <Card className="mt-11 w-[30vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
                 <CardContent>
                   <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
                     <Album />
@@ -409,6 +410,81 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="mt-20 text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
+        <Card className="w-[40vh] rounded-4xl">
+          <CardContent className="">
+            <div className="text-center">
+              <h3 className="text-[#676767] font-semibold text-xl">
+                Passo a Passo
+              </h3>
+              <h1 className="text-4xl font-bold">
+                Implementação do{" "}
+                <span className="text-[#5271FF]"> Sistema</span>
+              </h1>
+              <p className="text-sm mt-6">
+                Esses são os passos que a igreja precisa fazer para conseguir
+                utilizar o Obreiro Digital dentro da gestão pastoral:
+              </p>
+            </div>
+            <div className="text-center flex flex-col items-center">
+              <h1 className="mt-11 text-7xl font-bold">1.</h1>
+              <h2 className="mt-1 mb-3 text-2xl font-bold">Cadastro</h2>
+              <p className="text-base mb-8">
+                No primeiro contato, você responsável pela igreja, cadastra ela
+                no sistema e cria uma conta para você e as outras pessoas na
+                gestão e apoio{" "}
+              </p>
+
+              <Image
+                className="w-[10vh]"
+                alt="Obreiro Digital"
+                src="/seta-baixo.png"
+                height={100}
+                width={800}
+              />
+
+              <h1 className="mt-11 text-7xl font-bold">2.</h1>
+              <h2 className="mt-1 mb-3 text-2xl font-bold">Treinamento</h2>
+              <p className="text-base mb-8">
+                Nesta fase, todas as pessoas que vão usar o sistema fazem um
+                treinamento básico sobre como usar o sistema no dia-a-dia da
+                igreja
+              </p>
+
+              <Image
+                className="w-[10vh]"
+                alt="Obreiro Digital"
+                src="/seta-baixo.png"
+                height={100}
+                width={800}
+              />
+              <h1 className="mt-11 text-7xl font-bold">3.</h1>
+              <h2 className="mt-1 mb-3 text-2xl font-bold">Registro</h2>
+              <p className="text-base mb-8">
+                Fase onde o pessoal da gestão cadastra o apoio, membros,
+                departamentos, visitantes e todas as informações da igreja
+                dentro do sistema
+              </p>
+
+              <Image
+                className="w-[10vh]"
+                alt="Obreiro Digital"
+                src="/seta-baixo.png"
+                height={100}
+                width={800}
+              />
+
+              <h1 className="mt-11 text-7xl font-bold">4.</h1>
+              <h2 className="mt-1 mb-3 text-2xl font-bold">Concluído</h2>
+              <p className="text-base mb-8">
+                Agora você e sua igreja estão com o Obreiro Digital em pleno
+                funcionamento!
+              </p>
             </div>
           </CardContent>
         </Card>
