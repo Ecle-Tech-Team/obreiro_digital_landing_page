@@ -489,6 +489,19 @@ export default function Home() {
           </CardContent>
         </Card>
       </section>
+
+      <section className="text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
+        <Card className="w-[40vh] rounded-4xl">
+          <CardContent>
+            <div className="text-center">
+              <h3 className="text-[#676767] text-xl font-semibold">
+                Quanto custa?
+              </h3>
+              <h1 className="text-4xl font-bold ">Preço</h1>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
     </main>
   );
 }
