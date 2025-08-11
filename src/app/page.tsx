@@ -784,6 +784,37 @@ export default function Home() {
           </CardContent>
         </Card>
       </section>
+
+      <section className="mt-20 text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
+        <Card className="w-[40vh] rounded-4xl bg-[#5271FF] text-white">
+          <CardContent>
+            <h1 className="text-center text-3xl font-bold mb-8">
+              Precisa de uma versão própria do Obreiro Digital?
+            </h1>
+
+            <h3 className="font-(family-name:--font-nunito) text-center text-lg font-semibold">
+              Entre em contato conosco para construirmos uma solução específica
+              para a sua igreja
+            </h3>
+
+            <div>
+              <Image
+                className="mr-3"
+                alt="Obreiro Digital"
+                src="/image-obreiro.png"
+                height={750}
+                width={1200}
+              />
+            </div>
+
+            <div className="flex items-center justify-center mt-8 mb-2">
+              <Button className="bg-white text-[#5271FF] w-[20vh]">
+                Entre em Contato
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
     </main>
   );
 }
