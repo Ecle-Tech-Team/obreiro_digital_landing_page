@@ -20,7 +20,7 @@ import {
 
 export default function Home() {
   return (
-    <main className=" ">
+    <main className="font-(family-name:--font-poppins)">
       <Header />
 
       <section className=" h-[60vh] w-auto flex flex-col items-center font-(family-name:--font-poppins)">
@@ -490,14 +490,296 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
+      <section className="mt-20 text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
         <Card className="w-[40vh] rounded-4xl">
           <CardContent>
             <div className="text-center">
               <h3 className="text-[#676767] text-xl font-semibold">
                 Quanto custa?
               </h3>
-              <h1 className="text-4xl font-bold ">Preço</h1>
+              <h1 className="text-4xl font-bold mb-8 ">Preço</h1>
+            </div>
+
+            <div>
+              <h1 className="text-4xl font-bold mb-10">
+                O Obreiro Digital é{" "}
+                <span className="text-[#5271FF]">100% gratuito!</span>
+              </h1>
+              <p>
+                Todos as funcionalidades de gestão e apoio estão disponíveis
+                gratuitamente e{" "}
+                <span className="text-[#5271FF]">sem limites</span> para o uso.
+                <br />
+                <br />
+                Nosso objetivo é alcançar o máximo de pessoas possível deixando
+                o sistema financeiramente{" "}
+                <span className="text-[#5271FF]">viável </span>a todos!
+              </p>
+
+              <Button className="bg-[#5271FF] pl-6 pr-6 mt-8 mb-8">
+                Criar Conta
+              </Button>
+            </div>
+
+            <div className="flex flex-col items-center mb-5">
+              <Card className="bg-[#5271FF] w-[32vh] rounded-4xl">
+                <CardContent>
+                  <div className="flex flex-row justify-center items-center">
+                    <Image
+                      className="w-[5vh] h-[5vh] mr-3"
+                      alt="Obreiro Digital"
+                      src="/logo.png"
+                      height={750}
+                      width={1200}
+                    />
+                    <h1 className="text-xl font-bold text-white">
+                      OBREIRO
+                      <br />
+                      DIGITAL
+                    </h1>
+                  </div>
+
+                  <div className="flex flex-col items-center font-bold">
+                    <h1 className="text-[#FFFFFFB2] text-3xl mt-3 mb-3 line-through">
+                      R$49,90
+                    </h1>
+                    <h1 className="text-white text-5xl mb-8">R$00,00</h1>
+                  </div>
+
+                  <div className="text-white flex flex-col items-center text-lg mb-5">
+                    <ul className="list-disc">
+                      <li>Uso ilimitado no sistema</li>
+                      <li>Usuários ilimitados</li>
+                      <li>Treinamento gratuito</li>
+                      <li>Suporte 24h</li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="mt-20 text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
+        <Card className="w-[40vh] rounded-4xl">
+          <CardContent>
+            <div className="text-center mb-11">
+              <h3 className="text-[#676767] text-xl font-semibold">
+                Você pode contribuir com o projeto!
+              </h3>
+              <h1 className="text-4xl font-bold">
+                Financiamento <span className="text-[#5271FF]">Mensal</span>
+              </h1>
+            </div>
+
+            <div className=" flex flex-col items-center mb-10">
+              <Card className="w-[32vh] rounded-4xl flex flex-col items-center bg-[#F5F5F5]">
+                <CardContent>
+                  <div className="flex flex-row justify-center items-center mb-5">
+                    <Image
+                      className="w-[5.5vh] h-[5.5vh] mr-3"
+                      alt="Obreiro Digital"
+                      src="/logo-dark.png"
+                      height={750}
+                      width={1200}
+                    />
+                    <h1 className="text-xl font-bold">
+                      OBREIRO
+                      <br />
+                      DIGITAL
+                    </h1>
+                  </div>
+
+                  <div className="text-center mb-10">
+                    <h1 className="text-2xl font-bold">Starter</h1>
+                    <h1 className="text-5xl font-bold">R$10,00</h1>
+                  </div>
+
+                  <div className="flex flex-col ml-6 font-medium">
+                    <ul className="list-disc">
+                      <li>Nome no hall de lendas</li>
+                      <br />
+                      <li>
+                        Cursos extras (informática, design, social media,
+                        gestão)
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="flex justify-center mt-20">
+                    <Button className="bg-[#5271FF] w-[25vh]">
+                      Quero Apoiar
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className=" flex flex-col items-center mb-10">
+              <Card className="w-[32vh] rounded-4xl flex flex-col items-center bg-[#5271FF] text-white">
+                <CardContent>
+                  <div className="flex flex-row justify-center items-center mb-5">
+                    <Image
+                      className="w-[5.5vh] h-[5.5vh] mr-3"
+                      alt="Obreiro Digital"
+                      src="/logo.png"
+                      height={750}
+                      width={1200}
+                    />
+                    <h1 className="text-xl font-bold">
+                      OBREIRO
+                      <br />
+                      DIGITAL
+                    </h1>
+                  </div>
+
+                  <div className="text-center mb-10">
+                    <h1 className="text-2xl font-bold">Bronze</h1>
+                    <h1 className="text-5xl font-bold">R$49,99</h1>
+                  </div>
+
+                  <div className="flex flex-col ml-6 font-medium">
+                    <ul className="list-disc">
+                      <li>Tudo do starter</li>
+                      <br />
+                      <li>Certificado de conclusão de cursos extras</li>
+                    </ul>
+                  </div>
+
+                  <div className="flex justify-center mt-20">
+                    <Button className="bg-white w-[25vh] text-[#5271FF]">
+                      Quero Apoiar
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className=" flex flex-col items-center mb-10">
+              <Card className="w-[32vh] rounded-4xl flex flex-col items-center bg-[#F5F5F5]">
+                <CardContent>
+                  <div className="flex flex-row justify-center items-center mb-5">
+                    <Image
+                      className="w-[5.5vh] h-[5.5vh] mr-3"
+                      alt="Obreiro Digital"
+                      src="/logo-dark.png"
+                      height={750}
+                      width={1200}
+                    />
+                    <h1 className="text-xl font-bold">
+                      OBREIRO
+                      <br />
+                      DIGITAL
+                    </h1>
+                  </div>
+
+                  <div className="text-center mb-10">
+                    <h1 className="text-2xl font-bold">Prata</h1>
+                    <h1 className="text-5xl font-bold">R$299,00</h1>
+                  </div>
+
+                  <div className="flex flex-col ml-6 font-medium">
+                    <ul className="list-disc">
+                      <li>Tudo dos planos ateriores</li>
+                      <br />
+                      <li>Suporte VIP</li>
+                      <br />
+                      <li>Reunião com os devs</li>
+                    </ul>
+                  </div>
+
+                  <div className="flex justify-center mt-20">
+                    <Button className="bg-[#5271FF] w-[25vh]">
+                      Quero Apoiar
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className=" flex flex-col items-center mb-10">
+              <Card className="w-[32vh] rounded-4xl flex flex-col items-center bg-[#F5F5F5]">
+                <CardContent>
+                  <div className="flex flex-row justify-center items-center mb-5">
+                    <Image
+                      className="w-[5.5vh] h-[5.5vh] mr-3"
+                      alt="Obreiro Digital"
+                      src="/logo-dark.png"
+                      height={750}
+                      width={1200}
+                    />
+                    <h1 className="text-xl font-bold">
+                      OBREIRO
+                      <br />
+                      DIGITAL
+                    </h1>
+                  </div>
+
+                  <div className="text-center mb-10">
+                    <h1 className="text-2xl font-bold">Ouro</h1>
+                    <h1 className="text-5xl font-bold">R$499,00</h1>
+                  </div>
+
+                  <div className="flex flex-col ml-6 font-medium">
+                    <ul className="list-disc">
+                      <li>Tudo dos planos ateriores</li>
+                      <br />
+                      <li>Acesso a versões beta</li>
+                      <br />
+                      <li>Logo da Igreja no sistema</li>
+                    </ul>
+                  </div>
+
+                  <div className="flex justify-center mt-20">
+                    <Button className="bg-[#5271FF] w-[25vh]">
+                      Quero Apoiar
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className=" flex flex-col items-center mb-2">
+              <Card className="w-[32vh] rounded-4xl flex flex-col items-center bg-[#F5F5F5]">
+                <CardContent>
+                  <div className="flex flex-row justify-center items-center mb-5">
+                    <Image
+                      className="w-[5.5vh] h-[5.5vh] mr-3"
+                      alt="Obreiro Digital"
+                      src="/logo-dark.png"
+                      height={750}
+                      width={1200}
+                    />
+                    <h1 className="text-xl font-bold">
+                      OBREIRO
+                      <br />
+                      DIGITAL
+                    </h1>
+                  </div>
+
+                  <div className="text-center mb-10">
+                    <h1 className="text-2xl font-bold">Patriarca</h1>
+                    <h1 className="text-5xl font-bold">R$1.000,00</h1>
+                  </div>
+
+                  <div className="flex flex-col ml-6 font-medium">
+                    <ul className="list-disc">
+                      <li>Tudo dos planos ateriores</li>
+                      <br />
+                      <li>Mentoria de gestão da sua igreja</li>
+                      <br />
+                      <li>Mimos (chaveiros, canecas e camisetas)</li>
+                    </ul>
+                  </div>
+
+                  <div className="flex justify-center mt-20">
+                    <Button className="bg-[#5271FF] w-[25vh]">
+                      Quero Apoiar
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </CardContent>
         </Card>
