@@ -593,7 +593,7 @@ export default function Home() {
 
                   <div className="text-center mb-10">
                     <h1 className="text-2xl font-bold">Starter</h1>
-                    <h1 className="text-5xl font-bold">R$10,00</h1>
+                    <h1 className="text-4xl font-bold">R$10,00</h1>
                   </div>
 
                   <div className="flex flex-col ml-6 font-medium">
@@ -636,7 +636,7 @@ export default function Home() {
 
                   <div className="text-center mb-10">
                     <h1 className="text-2xl font-bold">Bronze</h1>
-                    <h1 className="text-5xl font-bold">R$49,99</h1>
+                    <h1 className="text-4xl font-bold">R$49,99</h1>
                   </div>
 
                   <div className="flex flex-col ml-6 font-medium">
@@ -676,7 +676,7 @@ export default function Home() {
 
                   <div className="text-center mb-10">
                     <h1 className="text-2xl font-bold">Prata</h1>
-                    <h1 className="text-5xl font-bold">R$299,00</h1>
+                    <h1 className="text-4xl font-bold">R$299,00</h1>
                   </div>
 
                   <div className="flex flex-col ml-6 font-medium">
@@ -718,7 +718,7 @@ export default function Home() {
 
                   <div className="text-center mb-10">
                     <h1 className="text-2xl font-bold">Ouro</h1>
-                    <h1 className="text-5xl font-bold">R$499,00</h1>
+                    <h1 className="text-4xl font-bold">R$499,00</h1>
                   </div>
 
                   <div className="flex flex-col ml-6 font-medium">
@@ -760,7 +760,7 @@ export default function Home() {
 
                   <div className="text-center mb-10">
                     <h1 className="text-2xl font-bold">Patriarca</h1>
-                    <h1 className="text-5xl font-bold">R$1.000,00</h1>
+                    <h1 className="text-4xl font-bold">R$1.000,00</h1>
                   </div>
 
                   <div className="flex flex-col ml-6 font-medium">
