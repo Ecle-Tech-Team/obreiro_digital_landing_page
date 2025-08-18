@@ -7,7 +7,10 @@ import { Rocket } from "lucide-react";
 import { ContactRound } from "lucide-react";
 import { Album } from "lucide-react";
 import { Star } from "lucide-react";
-import { MoveDown } from "lucide-react";
+import { Facebook } from "lucide-react";
+import { Instagram } from "lucide-react";
+import { Linkedin } from "lucide-react";
+import { Github } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -814,6 +817,48 @@ export default function Home() {
             </div>
           </CardContent>
         </Card>
+      </section>
+
+      <section className="mt-30 mb-30">
+        <div className="text-center mb-8">
+          <h3 className="text-[#676767] text-xl font-semibold mb-4">
+            Prepare a sua igreja para o futuro
+          </h3>
+          <h1 className="text-[#1E1E1E] font-bold text-4xl">
+            Transforme sua administração{" "}
+            <span className="text-[#5271FF]">hoje!</span>
+          </h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <Button className="text-white bg-[#5271FF] text-md mb-5">
+            Acesse Gratuitamente
+          </Button>
+          <Button className=" bg-transparent border-2 border-[#5271FF] rounded-lg text-[#5271FF] text-md font-medium">
+            Veja uma Demonstração
+          </Button>
+        </div>
+      </section>
+
+      <section className="bg-[#5271FF] w-[100%]">
+        <div className="flex items-center">
+          <Image
+            className="w-[5vh] h-[5vh] mr-3"
+            alt="Obreiro Digital"
+            src="/logo.png"
+            height={750}
+            width={1200}
+          />
+          <h1 className="text-lg font-bold text-white">
+            OBREIRO <br />
+            DIGITAL
+          </h1>
+        </div>
+        <div className="flex">
+          <Facebook className="rounded-full text-[#5271FF] bg-white" />
+          <Instagram className="rounded-full text-[#5271FF] bg-white" />
+          <Linkedin className="rounded-full text-[#5271FF] bg-white" />
+          <Github className="rounded-full text-[#5271FF] bg-white" />
+        </div>
       </section>
     </main>
   );
