@@ -11,6 +11,9 @@ import { Facebook } from "lucide-react";
 import { Instagram } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { Github } from "lucide-react";
+import { Mail } from "lucide-react";
+import { Phone } from "lucide-react";
+import { Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -839,26 +842,102 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#5271FF] w-[100%]">
-        <div className="flex items-center">
-          <Image
-            className="w-[5vh] h-[5vh] mr-3"
-            alt="Obreiro Digital"
-            src="/logo.png"
-            height={750}
-            width={1200}
-          />
-          <h1 className="text-lg font-bold text-white">
-            OBREIRO <br />
-            DIGITAL
-          </h1>
+      <section className="bg-[#5271FF] w-[100%] font-(family-name:--font-poppins)">
+        <div className="grid grid-cols-2 text-white pt-12">
+          <div className="pl-5">
+            <div className="flex items-center">
+              <Image
+                className="w-[5vh] h-[5vh] mr-3"
+                alt="Obreiro Digital"
+                src="/logo.png"
+                height={750}
+                width={1200}
+              />
+              <h1 className="text-white text-2xl font-bold">
+                Obreiro <br />
+                Digital
+              </h1>
+            </div>
+
+            <div className="flex text-[#5271FF] gap-2 mt-4">
+              <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
+                <Facebook className="w-6 h-6" />
+              </div>
+              <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
+                <Instagram className="w-6 h-6" />
+              </div>
+              <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
+                <Linkedin className="w-6 h-6" />
+              </div>
+              <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
+                <Github className="w-6 h-6" />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="flex items-center w-[30vh] gap-2 text-sm mb-5">
+              <Mail className="w-7 h-7" />
+              <p>ecletecnologia@gmail.com</p>
+            </div>
+            <div className="flex items-center w-[30vh] gap-2 text-sm mb-5">
+              <Phone className="w-7 h-7" />
+              <p>(11) 9952-0702</p>
+            </div>
+            <div className="flex items-center w-[30vh] gap-2 text-sm mb-13">
+              <Clock className="w-7 h-7" />
+              <p>Seg-Sex das 8h às 18h</p>
+            </div>
+          </div>
         </div>
+
         <div className="flex">
-          <Facebook className="rounded-full text-[#5271FF] bg-white" />
-          <Instagram className="rounded-full text-[#5271FF] bg-white" />
-          <Linkedin className="rounded-full text-[#5271FF] bg-white" />
-          <Github className="rounded-full text-[#5271FF] bg-white" />
+          <div className="pl-5 text-white">
+            <h1 className="text-3xl font-bold mb-3">Início</h1>
+            <ul className="text-xl font-semibold">
+              <li className="mb-3">Início</li>
+              <li className="mb-3">Missão</li>
+              <li className="mb-3">Recursos</li>
+              <li className="mb-3">Implementação</li>
+              <li className="mb-12">Financiamento</li>
+            </ul>
+          </div>
+
+          <div className="pl-10 text-white">
+            <h1 className="text-3xl font-bold mb-3">Recursos</h1>
+            <ul className="text-xl font-semibold">
+              <li className="mb-3">Gestão</li>
+              <li className="mb-3">Apoio</li>
+              <li className="mb-3">Termos de Uso</li>
+              <li className="mb-3">Termos de Privacidade</li>
+            </ul>
+          </div>
         </div>
+
+        <div className="pl-5 text-white">
+          <h1 className="text-3xl font-bold mb-3">Implementação</h1>
+          <ul className="text-xl font-semibold">
+            <li className="mb-3">Cadastro</li>
+            <li className="mb-3">Treinamento</li>
+            <li className="mb-3">Registro</li>
+            <li className="mb-12">Segurança de Dados</li>
+          </ul>
+        </div>
+
+        <div className="pl-5 text-white">
+          <h1 className="text-3xl font-bold mb-3">Planos</h1>
+          <ul className="text-xl font-semibold">
+            <li className="mb-3">Ofertante</li>
+            <li className="mb-3">Bronze</li>
+            <li className="mb-3">Prata</li>
+            <li className="mb-3">Prata</li>
+            <li className="mb-15">Patriarca</li>
+          </ul>
+        </div>
+
+        <h3 className="text-center text-xl text-white">
+          © Copyright 2025. Ecle Tech Team. Todos os direitos reservados.
+        </h3>
       </section>
     </main>
   );
