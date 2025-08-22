@@ -61,18 +61,17 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col items-center mb-11">
-        <Card className="w-[45vh] flex justify-center">
-          <CardContent className="flex justify-center">
-            <Image
-              alt="Obreiro Digital"
-              src="/inicio_page.png"
-              height={750}
-              width={1200}
-            />
-          </CardContent>
-        </Card>
+        <div className="">
+          <Image
+            className="w-[50vh] h-[25vh]"
+            alt="Obreiro Digital"
+            src="/inicio_page.png"
+            height={750}
+            width={1200}
+          />
+        </div>
 
-        <Card className="w-[45vh] mt-[3vh] flex flex-col justify-center">
+        <Card className="w-[45vh] flex flex-col justify-center">
           <CardContent className="flex flex-col text-center">
             <h1 className="text-7xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
               3º
@@ -935,7 +934,7 @@ export default function Home() {
           </ul>
         </div>
 
-        <h3 className="text-center text-xl text-white">
+        <h3 className="text-center text-base text-white">
           © Copyright 2025. Ecle Tech Team. Todos os direitos reservados.
         </h3>
       </section>
