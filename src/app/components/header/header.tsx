@@ -1,12 +1,21 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { MenuIcon } from "lucide-react";
+import { useState } from "react";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <section className="flex items-center justify-center mt-[1vh]">
-      <Card className="bg-[#5271FF] w-[95%] h-[8vh] rounded-3xl">
+      <Card className="bg-[#5271FF] w-[95%] h-[8%] rounded-3xl py-3">
         <CardContent className="flex justify-between">
           <Image
             className=""
@@ -15,9 +24,92 @@ const Header = () => {
             height={22}
             width={48}
           />
-          <Button className="bg-transparent" variant="ghost">
-            <MenuIcon className="text-white"></MenuIcon>
-          </Button>
+          <div className="relative">
+            <Button
+              className="bg-transparent h-[5vh] w-[8vh] flex items-center justify-center"
+              variant="ghost"
+              onClick={toggleMenu}
+            >
+              <MenuIcon className="text-white" />
+            </Button>
+            {isMenuOpen && (
+              <div className="absolute right-0 mt-2 w-80 bg-[#5271FF] text-white rounded-md shadow-lg z-10 ">
+                <div className="">
+                  <Image
+                    className="pl-4 h-[4vh] w-[6vh]"
+                    alt="Obreiro Digital"
+                    src="/logo.png"
+                    height={22}
+                    width={48}
+                  />
+                </div>
+                <ul className="py-1">
+                  <li>
+                    <a
+                      href="#home"
+                      className="block px-4 py-2 text-lg font-bold"
+                      onClick={toggleMenu}
+                    >
+                      Início
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#about"
+                      className="block px-4 py-2 text-lg font-bold"
+                      onClick={toggleMenu}
+                    >
+                      Missão
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#services"
+                      className="block px-4 py-2 text-lg font-bold"
+                      onClick={toggleMenu}
+                    >
+                      Recursos
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#contact"
+                      className="block px-4 py-2 text-lg font-bold"
+                      onClick={toggleMenu}
+                    >
+                      Implementação
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#contact"
+                      className="block px-4 py-2 pb-4 text-lg font-bold"
+                      onClick={toggleMenu}
+                    >
+                      Planos
+                    </a>
+                  </li>
+                  <li>
+                    <div className="flex items-center pl-3 pb-4">
+                      <Button
+                        className="block px-4  py-2 text-sm font-bold bg-white text-[#5271FF]"
+                        onClick={toggleMenu}
+                      >
+                        Criar Conta
+                      </Button>
+
+                      <Button
+                        className="block px-4 py-2 text-sm font-bold bg-transparent text-white"
+                        onClick={toggleMenu}
+                      >
+                        Fazer Login
+                      </Button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            )}
+          </div>
         </CardContent>
       </Card>
     </section>
