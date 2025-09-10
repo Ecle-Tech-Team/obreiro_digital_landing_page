@@ -30,7 +30,7 @@ export default function Home() {
       <Header />
 
       <section className=" h-[60vh] w-auto flex flex-col items-center font-(family-name:--font-poppins)">
-        <div className="text-center font-extrabold mt-[5vh]">
+        <div className="text-center font-extrabold mt-[5vh] xl:mt-[16vh]">
           <h1 className="text-5xl flex justify-center text-[#1E1E1E]">
             Eleve sua gestão com o
           </h1>
@@ -44,15 +44,15 @@ export default function Home() {
             confiabilidade, segurança e agilidade para sua gestão pastoral.
           </p>
         </div>
-        <div className="mt-[3vh] flex flex-col">
+        <div className="mt-[3vh] xl:mt-[6vh] flex flex-col xl:flex-row xl:items-center xl:gap-8">
           <button className="w-[28vh] h-[5vh] bg-[#5271FF] text-white rounded-lg text-lg font-medium">
             Acesse Gratuitamente
           </button>
-          <button className="mt-5 w-[28vh] h-[5vh] border-2 border-[#5271FF] rounded-lg text-[#5271FF] text-lg font-medium">
+          <button className="mt-5 xl:mt-0 w-[28vh] h-[5vh] border-2 border-[#5271FF] rounded-lg text-[#5271FF] text-lg font-medium">
             Veja uma demonstração
           </button>
         </div>
-        <div className="mt-[3vh] w-[47vh] flex justify-evenly ">
+        <div className="mt-[3vh] w-[50vh] flex justify-evenly xl:mt-[5vh] ">
           <Check />
           <h2>Sem custo de acesso</h2>
           <Check />
@@ -60,10 +60,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center mb-11">
-        <div className="">
+      <section className="flex flex-col items-center mb-11 xl:mt-[20vh]">
+        <div className=" w-full flex justify-center">
           <Image
-            className="w-[50vh] h-[25vh]"
+            className="w-[100%] h-[25%] xl:w-[80%] xl:h-[50%]"
             alt="Obreiro Digital"
             src="/inicio_page.png"
             height={750}
@@ -71,50 +71,52 @@ export default function Home() {
           />
         </div>
 
-        <Card className="w-[45vh] flex flex-col justify-center">
-          <CardContent className="flex flex-col text-center">
-            <h1 className="text-7xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
-              3º
-            </h1>
-            <div className="flex justify-center">
-              <h2 className="text-xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
-                Maior Causa de{" "}
-                <span className="text-[#5271FF]">Desfiliação</span>
-              </h2>
-            </div>
-            <p className="font-semibold font-(family-name:--font-nunito) mt-[2vh] mb-[8vh]">
-              São escândalos financeiros e abusos espirituais por má governança
-              dentro das igrejas, segundo teólogos
-            </p>
-          </CardContent>
-          <CardContent className="flex flex-col text-center ">
-            <h1 className="text-7xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
-              76%
-            </h1>
-            <div className="flex justify-center">
-              <h2 className="text-xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
-                dos Novos <span className="text-[#5271FF]">Cristãos</span>
-              </h2>
-            </div>
-            <p className="font-semibold font-(family-name:--font-nunito) mt-[2vh] mb-[8vh]">
-              Em igrejas buscam informações online (horários, programas sociais,
-              transparência financeira) antes de visitar uma igreja
-            </p>
-          </CardContent>
-          <CardContent className="flex flex-col text-center ">
-            <h1 className="text-7xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
-              3x
-            </h1>
-            <div className="flex justify-center">
-              <h2 className="text-xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
-                Mais Risco de <span className="text-[#5271FF]">Fechar</span>
-              </h2>
-            </div>
-            <p className="font-semibold font-(family-name:--font-nunito) mt-[2vh] mb-[8vh]">
-              Igrejas sem controle de fluxo de caixa têm mais chance de fechar
-              as portas em até 5 anos em média no Brasil
-            </p>
-          </CardContent>
+        <Card className="w-[100%] flex flex-col justify-center border-0">
+          <div className="xl:flex xl:items-center xl:mb-0">
+            <CardContent className="flex flex-col text-center ">
+              <h1 className="text-7xl xl:mt-[8vh] font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
+                3º
+              </h1>
+              <div className="flex justify-center">
+                <h2 className="text-xl font-bold xl:mb-5 text-[#1E1E1E] font-(family-name:--font-poppins)">
+                  Maior Causa de{" "}
+                  <span className="text-[#5271FF]">Desfiliação</span>
+                </h2>
+              </div>
+              <p className="font-semibold font-(family-name:--font-nunito) mt-[2vh mb-[8vh]">
+                São escândalos financeiros e abusos espirituais por má
+                governança dentro das igrejas, segundo teólogos
+              </p>
+            </CardContent>
+            <CardContent className="flex flex-col text-center ">
+              <h1 className="text-7xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
+                76%
+              </h1>
+              <div className="flex justify-center">
+                <h2 className="text-xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
+                  dos Novos <span className="text-[#5271FF]">Cristãos</span>
+                </h2>
+              </div>
+              <p className="font-semibold font-(family-name:--font-nunito) mt-[2vh] xl:mb-0 mb-[8vh]">
+                Em igrejas buscam informações online (horários, programas
+                sociais, transparência financeira) antes de visitar uma igreja
+              </p>
+            </CardContent>
+            <CardContent className="flex flex-col text-center ">
+              <h1 className="text-7xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
+                3x
+              </h1>
+              <div className="flex justify-center">
+                <h2 className="text-xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
+                  Mais Risco de <span className="text-[#5271FF]">Fechar</span>
+                </h2>
+              </div>
+              <p className="font-semibold font-(family-name:--font-nunito) mt-[2vh] xl:mb-0 mb-[8vh]">
+                Igrejas sem controle de fluxo de caixa têm mais chance de fechar
+                as portas em até 5 anos em média no Brasil
+              </p>
+            </CardContent>
+          </div>
         </Card>
       </section>
 
