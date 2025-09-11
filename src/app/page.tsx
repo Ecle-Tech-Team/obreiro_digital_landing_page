@@ -120,100 +120,111 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="flex flex-col items-center mt-[12vh]  mb-11 font-(family-name:--font-poppins)">
-        <div>
-          <Card className="w-[40vh] rounded-4xl">
+      <section className="flex flex-col items-center mt-[12vh] mb-11 font-(family-name:--font-poppins)">
+        <div className="flex justify-center">
+          <Card className="w-[40vh] xl:w-[185vh] xl:h-[100vh] rounded-4xl">
             <CardContent className="flex items-center flex-col">
-              <div className="w-full flex flex-col">
-                <h1 className="text-5xl pt-8 pb-10 font-bold text-[#1E1E1E]">
-                  Por que o
-                  <br />
-                  <span className="text-[#5271FF]">Obreiro Digital?</span>
-                </h1>
-                <h3 className="font-(family-name:--font-nunito) font-bold text-[#1E1E1E]">
-                  Temos como missão não só entregar recursos e eficiência na
-                  gestão de igrejas, queremos elevar o{" "}
-                  <span className="text-[#5271FF]">
-                    nível da obra do Senhor.
-                  </span>
-                  <br />
-                  <br />
-                  Usar o Obreiro Digital não é apenas adquirir um sistema
-                  bonito, será <span className="text-[#5271FF]">
-                    capacitar
-                  </span>{" "}
-                  Pastores e Obreiros para trabalharem na obra do Senhor da
-                  melhor maneira possível.
-                </h3>
+              <div className="xl:flex">
+                <div className="xl:w-[30%]">
+                  <div className="w-full flex flex-col">
+                    <h1 className="text-5xl pt-8 pb-10 font-bold text-[#1E1E1E]">
+                      Por que o
+                      <br />
+                      <span className="text-[#5271FF]">Obreiro Digital?</span>
+                    </h1>
+                    <h3 className="font-(family-name:--font-nunito) font-bold text-[#1E1E1E]">
+                      Temos como missão não só entregar recursos e eficiência na
+                      gestão de igrejas, queremos elevar o{" "}
+                      <span className="text-[#5271FF]">
+                        nível da obra do Senhor.
+                      </span>
+                      <br />
+                      <br />
+                      Usar o Obreiro Digital não é apenas adquirir um sistema
+                      bonito, será{" "}
+                      <span className="text-[#5271FF]">capacitar</span> Pastores
+                      e Obreiros para trabalharem na obra do Senhor da melhor
+                      maneira possível.
+                    </h3>
+                  </div>
+
+                  <div>
+                    <Button className="bg-[#5271FF] mt-11 w-[21vh] text-md">
+                      Conheça o Projeto
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="xl:block">
+                  <div className="xl:flex">
+                    <Card className="mt-11 w-[30vh] xl:w-[40vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+                      <CardContent>
+                        <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
+                          <ChartColumn />
+                        </div>
+                        <h1 className="text-2xl xl:text-xl font-bold mt-4 mb-6">
+                          Gestão Via Dados
+                        </h1>
+                        <p className="xl:text-sm">
+                          Controle e histórico completo de tudo o que acontece
+                          na sua igreja, garantindo uma gestão mais inteligente
+                          e preparada para avanços da sociedade
+                        </p>
+                      </CardContent>
+                    </Card>
+
+                    <Card className="mt-11 w-[30vh] xl:w-[40vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+                      <CardContent>
+                        <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
+                          <Rocket />
+                        </div>
+                        <h1 className="text-2xl xl:text-xl font-bold mt-4 mb-6">
+                          Eficiência e Agilidade
+                        </h1>
+                        <p className="xl:text-sm">
+                          O Obreiro Digital trará a segurança de que a obra do
+                          Senhor está eficiente e ágil para Pastores e Líderes
+                          de Igreja.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </div>
+
+                  <div className="xl:flex">
+                    <Card className="mt-11 w-[30vh] xl:w-[40vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+                      <CardContent>
+                        <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
+                          <ContactRound />
+                        </div>
+                        <h1 className="text-2xl xl:text-xl font-bold mt-4 mb-6">
+                          Experiência do Usuário
+                        </h1>
+                        <p className="xl:text-sm">
+                          Garantiremos a melhor experiência de usuário para que
+                          seja fácil usar o sistema independente do nível
+                          técnico
+                        </p>
+                      </CardContent>
+                    </Card>
+
+                    <Card className="mt-11 w-[30vh] xl:w-[40vh] xl:h-[40vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+                      <CardContent>
+                        <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
+                          <Album />
+                        </div>
+                        <h1 className="text-2xl xl:text-xl font-bold mt-4 mb-6">
+                          Alfabetização Digital
+                        </h1>
+                        <p className="xl:text-sm">
+                          Conhecemos a falta de acesso e conhecimento em
+                          tecnologia de alguns irmãos, sabendo disso, daremos
+                          todo o suporte necessário em todas áreas.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
               </div>
-
-              <div>
-                <Button className="bg-[#5271FF] mt-11 w-[21vh] text-md">
-                  Conheça o Projeto
-                </Button>
-              </div>
-
-              <Card className="mt-25 w-[30vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
-                <CardContent>
-                  <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
-                    <ChartColumn />
-                  </div>
-                  <h1 className="text-2xl font-bold mt-4 mb-6">
-                    Gestão Via Dados
-                  </h1>
-                  <p>
-                    Controle e histórico completo de tudo o que acontece na sua
-                    igreja, garantindo uma gestão mais inteligente e preparada
-                    para avanços da sociedade
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="mt-11 w-[30vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
-                <CardContent>
-                  <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
-                    <Rocket />
-                  </div>
-                  <h1 className="text-2xl font-bold mt-4 mb-6">
-                    Eficiência e Agilidade
-                  </h1>
-                  <p>
-                    O Obreiro Digital trará a segurança de que a obra do Senhor
-                    está eficiente e ágil para Pastores e Líderes de Igreja.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="mt-11 w-[30vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
-                <CardContent>
-                  <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
-                    <ContactRound />
-                  </div>
-                  <h1 className="text-2xl font-bold mt-4 mb-6">
-                    Experiência do Usuário
-                  </h1>
-                  <p>
-                    Garantiremos a melhor experiência de usuário para que seja
-                    fácil usar o sistema independente do nível técnico
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="mt-11 w-[30vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
-                <CardContent>
-                  <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
-                    <Album />
-                  </div>
-                  <h1 className="text-2xl font-bold mt-4 mb-6">
-                    Alfabetização Digital
-                  </h1>
-                  <p>
-                    Conhecemos a falta de acesso e conhecimento em tecnologia de
-                    alguns irmãos, sabendo disso, daremos todo o suporte
-                    necessário em todas áreas.
-                  </p>
-                </CardContent>
-              </Card>
             </CardContent>
           </Card>
         </div>

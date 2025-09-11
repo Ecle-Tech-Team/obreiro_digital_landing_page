@@ -26,13 +26,13 @@ const Header = () => {
               width={48}
             />
 
-            <h1 className="ml-2 text-lg font-bold text-white invisible xl:visible">
+            <h1 className="ml-2 text-lg font-bold text-white hidden xl:block">
               OBREIRO
               <br />
               DIGITAL
             </h1>
           </div>
-          <section className="flex items-center w-[100%] justify-around invisible xl:visible ml-[15vh] text-white font-bold">
+          <section className="xl:flex xl:items-center w-[100%] justify-around hidden xl:block ml-[15vh] text-white font-bold font-(family-name:--font-poppins)">
             <h1>
               <a href="#">Início</a>
             </h1>
