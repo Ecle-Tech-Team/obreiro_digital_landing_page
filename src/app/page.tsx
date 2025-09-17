@@ -342,13 +342,13 @@ export default function Home() {
       </section>
 
       <section className=" flex flex-col items-center font-(family-name:--font-poppins) text-[#1E1E1E]">
-        <Card className="w-[40vh] xl:w-[185vh] xl:h-[102vh] rounded-4xl">
+        <Card className="w-[40vh] xl:w-[185vh] xl:h-[110vh] rounded-4xl">
           <CardContent className="mt-9 mb-9">
             <div className="text-center xl:text-start flex flex-col items-center xl:items-start xl:ml-15 xl:mb-15">
               <h3 className="text-[#676767] font-semibold text-xl">
                 O que os usuários acharam?
               </h3>
-              <h1 className="text-4xl font-bold mb-3">
+              <h1 className="text-4xl xl:text-5xl font-bold mb-3">
                 {" "}
                 Confiado em <span className="text-[#5271FF]">Igrejas</span>
               </h1>
@@ -434,84 +434,91 @@ export default function Home() {
       </section>
 
       <section className="mt-20 text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
-        <Card className="w-[40vh] rounded-4xl">
-          <CardContent className="">
-            <div className="text-center">
+        <Card className="w-[40vh] xl:h-[100vh] xl:w-[185vh] rounded-4xl ">
+          <CardContent className=" xl:px-[10vh]">
+            <div className="text-center xl:text-start xl:mb-10 xl:mt-10 xl:w-[80vh]">
               <h3 className="text-[#676767] font-semibold text-xl">
                 Passo a Passo
               </h3>
-              <h1 className="text-4xl font-bold">
+              <h1 className="text-4xl xl:text-5xl font-bold">
                 Implementação do{" "}
                 <span className="text-[#5271FF]"> Sistema</span>
               </h1>
-              <p className="text-sm mt-6">
+              <p className="text-sm xl:text-base xl:font-semibold mt-6">
                 Esses são os passos que a igreja precisa fazer para conseguir
                 utilizar o Obreiro Digital dentro da gestão pastoral:
               </p>
             </div>
-            <div className="text-center flex flex-col items-center">
-              <h1 className="mt-11 text-7xl font-bold">1.</h1>
-              <h2 className="mt-1 mb-3 text-2xl font-bold">Cadastro</h2>
-              <p className="text-base mb-8">
-                No primeiro contato, você responsável pela igreja, cadastra ela
-                no sistema e cria uma conta para você e as outras pessoas na
-                gestão e apoio{" "}
-              </p>
+            <div className="text-center xl:text-start flex flex-col items-center xl:flex-row">
+              <div className="xl:flex xl:flex-col xl:w-[90vh]">
+                <h1 className="mt-11 xl:mb-3 text-7xl font-bold">1.</h1>
+                <h2 className="mt-1 mb-3 text-2xl font-bold">Cadastro</h2>
+                <p className="text-base mb-8">
+                  No primeiro contato, você responsável pela igreja, cadastra
+                  ela no sistema e cria uma conta para você e as outras pessoas
+                  na gestão e apoio{" "}
+                </p>
+              </div>
 
               <Image
-                className="w-[10vh]"
+                className="w-[10vh] xl:rotate-270 mx-5"
+                alt="Obreiro Digital"
+                src="/seta-baixo.png"
+                height={100}
+                width={800}
+              />
+              <div className="xl:flex xl:flex-col xl:w-[90vh]">
+                <h1 className="mt-11 xl:mb-3 text-7xl font-bold">2.</h1>
+                <h2 className="mt-1 mb-3 text-2xl font-bold">Treinamento</h2>
+                <p className="text-base mb-8">
+                  Nesta fase, todas as pessoas que vão usar o sistema fazem um
+                  treinamento básico sobre como usar o sistema no dia-a-dia da
+                  igreja
+                </p>
+              </div>
+
+              <Image
+                className="w-[10vh] xl:rotate-270 mx-5"
                 alt="Obreiro Digital"
                 src="/seta-baixo.png"
                 height={100}
                 width={800}
               />
 
-              <h1 className="mt-11 text-7xl font-bold">2.</h1>
-              <h2 className="mt-1 mb-3 text-2xl font-bold">Treinamento</h2>
-              <p className="text-base mb-8">
-                Nesta fase, todas as pessoas que vão usar o sistema fazem um
-                treinamento básico sobre como usar o sistema no dia-a-dia da
-                igreja
-              </p>
+              <div className="xl:flex xl:flex-col xl:w-[90vh]">
+                <h1 className="mt-11 xl:mb-3 text-7xl font-bold">3.</h1>
+                <h2 className="mt-1 mb-3 text-2xl font-bold">Registro</h2>
+                <p className="text-base mb-8">
+                  Fase onde o pessoal da gestão cadastra o apoio, membros,
+                  departamentos, visitantes e todas as informações da igreja
+                  dentro do sistema
+                </p>
+              </div>
 
               <Image
-                className="w-[10vh]"
+                className="w-[10vh] xl:rotate-270 mx-5"
                 alt="Obreiro Digital"
                 src="/seta-baixo.png"
                 height={100}
                 width={800}
               />
-              <h1 className="mt-11 text-7xl font-bold">3.</h1>
-              <h2 className="mt-1 mb-3 text-2xl font-bold">Registro</h2>
-              <p className="text-base mb-8">
-                Fase onde o pessoal da gestão cadastra o apoio, membros,
-                departamentos, visitantes e todas as informações da igreja
-                dentro do sistema
-              </p>
-
-              <Image
-                className="w-[10vh]"
-                alt="Obreiro Digital"
-                src="/seta-baixo.png"
-                height={100}
-                width={800}
-              />
-
-              <h1 className="mt-11 text-7xl font-bold">4.</h1>
-              <h2 className="mt-1 mb-3 text-2xl font-bold">Concluído</h2>
-              <p className="text-base mb-8">
-                Agora você e sua igreja estão com o Obreiro Digital em pleno
-                funcionamento!
-              </p>
+              <div className="xl:flex xl:flex-col xl:mb-5">
+                <h1 className="mt-11 xl:mb-3 text-7xl font-bold">4.</h1>
+                <h2 className="mt-1 mb-3 text-2xl font-bold">Concluído</h2>
+                <p className="text-base mb-8">
+                  Agora você e sua igreja estão com o Obreiro Digital em pleno
+                  funcionamento!
+                </p>
+              </div>
             </div>
           </CardContent>
         </Card>
       </section>
 
       <section className="mt-20 text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
-        <Card className="w-[40vh] rounded-4xl">
+        <Card className="w-[40vh] xl:w-[185vh] rounded-4xl">
           <CardContent>
-            <div className="text-center">
+            <div className="text-center xl:text-start">
               <h3 className="text-[#676767] text-xl font-semibold">
                 Quanto custa?
               </h3>
