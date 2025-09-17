@@ -155,8 +155,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="xl:block">
-                  <div className="xl:flex">
+                <div className="xl:w-[80%]">
+                  <div className="xl:flex xl:justify-evenly">
                     <Card className="mt-11 w-[30vh] xl:w-[40vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
                       <CardContent>
                         <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
@@ -190,7 +190,7 @@ export default function Home() {
                     </Card>
                   </div>
 
-                  <div className="xl:flex">
+                  <div className="xl:flex xl:justify-evenly">
                     <Card className="mt-11 w-[30vh] xl:w-[40vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
                       <CardContent>
                         <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
@@ -231,7 +231,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col jutify-center items-center font-(family-name:--font-poppins)">
-        <Card className="w-[40vh] rounded-4xl h-auto bg-[#5271FF] mb-20">
+        <Card className="w-[40vh] xl:w-[185vh] rounded-4xl h-auto bg-[#5271FF] mb-20">
           <CardContent>
             <div className="text-white text-center flex flex-col items-center font-bold">
               <h3 className="text-lg font-medium">Pastores e Líderes</h3>
@@ -285,7 +285,7 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        <Card className=" h-auto w-[40vh] bg-[#5271FF] rounded-4xl mb-20">
+        <Card className=" h-auto w-[40vh] xl:w-[185vh] bg-[#5271FF] rounded-4xl mb-20">
           <CardContent>
             <div className="text-white text-center flex flex-col items-center font-bold">
               <h3 className="text-lg font-medium">Pastores e Líderes</h3>
@@ -342,9 +342,9 @@ export default function Home() {
       </section>
 
       <section className=" flex flex-col items-center font-(family-name:--font-poppins) text-[#1E1E1E]">
-        <Card className="w-[40vh] rounded-4xl">
+        <Card className="w-[40vh] xl:w-[185vh] xl:h-[102vh] rounded-4xl">
           <CardContent className="mt-9 mb-9">
-            <div className="text-center flex flex-col items-center">
+            <div className="text-center xl:text-start flex flex-col items-center xl:items-start xl:ml-15 xl:mb-15">
               <h3 className="text-[#676767] font-semibold text-xl">
                 O que os usuários acharam?
               </h3>
@@ -352,14 +352,14 @@ export default function Home() {
                 {" "}
                 Confiado em <span className="text-[#5271FF]">Igrejas</span>
               </h1>
-              <p className="text-sm w-48 mb-11">
+              <p className="text-sm xl:text-base xl:font-semibold w-48 xl:w-[40%] mb-11">
                 Feedback de alguns usuários que utilizaram o Obreiro Digital em
                 suas igrejas:
               </p>
             </div>
 
-            <div className="flex flex-col items-center">
-              <Card className="bg-[#F5F5F5] w-[32vh] mb-11 shadow-md">
+            <div className="flex flex-col xl:flex-row xl:justify-evenly items-center">
+              <Card className="bg-[#F5F5F5] w-[32vh] xl:w-[50vh] xl:h-[50vh] mb-11 xl:mb-0 shadow-md">
                 <CardContent className="">
                   <h1 className="text-2xl font-bold mb-5">Gestão Via Dados</h1>
                   <h3 className=" mb-15">
@@ -382,7 +382,7 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="bg-[#F5F5F5] w-[32vh] mb-11 shadow-md">
+              <Card className="bg-[#F5F5F5] w-[32vh] xl:w-[50vh] xl:h-[50vh] mb-11 xl:mb-0 shadow-md">
                 <CardContent className="">
                   <h1 className="text-2xl font-bold mb-5">Gestão Via Dados</h1>
                   <h3 className=" mb-15">
@@ -405,7 +405,7 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="bg-[#F5F5F5] w-[32vh] shadow-md">
+              <Card className="bg-[#F5F5F5] w-[32vh] xl:w-[50vh] xl:h-[50vh] shadow-md">
                 <CardContent className="">
                   <h1 className="text-2xl font-bold mb-5">Gestão Via Dados</h1>
                   <h3 className=" mb-15">
