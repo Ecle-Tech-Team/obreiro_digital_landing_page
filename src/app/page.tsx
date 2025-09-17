@@ -516,39 +516,42 @@ export default function Home() {
       </section>
 
       <section className="mt-20 text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
-        <Card className="w-[40vh] xl:w-[185vh] rounded-4xl">
-          <CardContent>
-            <div className="text-center xl:text-start">
-              <h3 className="text-[#676767] text-xl font-semibold">
-                Quanto custa?
-              </h3>
-              <h1 className="text-4xl font-bold mb-8 ">Preço</h1>
+        <Card className="w-[40vh] xl:w-[185vh] xl:h-[100vh] rounded-4xl">
+          <CardContent className="xl:flex">
+            <div className="xl:w-[50vh] xl:flex xl:flex-col xl:m-10">
+              <div className="text-center xl:text-start">
+                <h3 className="text-[#676767] text-xl font-semibold">
+                  Quanto custa?
+                </h3>
+                <h1 className="text-4xl font-bold mb-8 ">Preço</h1>
+              </div>
+
+              <div>
+                <h1 className="text-4xl font-bold mb-10">
+                  O Obreiro Digital é{" "}
+                  <span className="text-[#5271FF]">100% gratuito!</span>
+                </h1>
+                <p className="xl:text-lg xl:font-semibold">
+                  Todos as funcionalidades de gestão e apoio estão disponíveis
+                  gratuitamente e{" "}
+                  <span className="text-[#5271FF]">sem limites</span> para o
+                  uso.
+                  <br />
+                  <br />
+                  Nosso objetivo é alcançar o máximo de pessoas possível
+                  deixando o sistema financeiramente{" "}
+                  <span className="text-[#5271FF]">viável </span>a todos!
+                </p>
+
+                <Button className="bg-[#5271FF] pl-6 pr-6 mt-8 mb-8">
+                  Criar Conta
+                </Button>
+              </div>
             </div>
 
-            <div>
-              <h1 className="text-4xl font-bold mb-10">
-                O Obreiro Digital é{" "}
-                <span className="text-[#5271FF]">100% gratuito!</span>
-              </h1>
-              <p>
-                Todos as funcionalidades de gestão e apoio estão disponíveis
-                gratuitamente e{" "}
-                <span className="text-[#5271FF]">sem limites</span> para o uso.
-                <br />
-                <br />
-                Nosso objetivo é alcançar o máximo de pessoas possível deixando
-                o sistema financeiramente{" "}
-                <span className="text-[#5271FF]">viável </span>a todos!
-              </p>
-
-              <Button className="bg-[#5271FF] pl-6 pr-6 mt-8 mb-8">
-                Criar Conta
-              </Button>
-            </div>
-
-            <div className="flex flex-col items-center mb-5">
-              <Card className="bg-[#5271FF] w-[32vh] rounded-4xl">
-                <CardContent>
+            <div className="flex flex-col items-center mb-5 xl:mx-60 xl:my-25">
+              <Card className="bg-[#5271FF] w-[32vh] xl:w-[60vh] xl:h-[65vh] rounded-4xl">
+                <CardContent className="xl:my-6">
                   <div className="flex flex-row justify-center items-center">
                     <Image
                       className="w-[5vh] h-[5vh] mr-3"
@@ -571,11 +574,11 @@ export default function Home() {
                     <h1 className="text-white text-5xl mb-8">R$00,00</h1>
                   </div>
 
-                  <div className="text-white flex flex-col items-center text-lg mb-5">
-                    <ul className="list-disc">
-                      <li>Uso ilimitado no sistema</li>
-                      <li>Usuários ilimitados</li>
-                      <li>Treinamento gratuito</li>
+                  <div className="text-white flex flex-col items-center text-lg mb-5 ">
+                    <ul className="list-disc xl:text-xl xl:font-semibold xl:gap-16">
+                      <li className="xl:mb-4">Uso ilimitado no sistema</li>
+                      <li className="xl:mb-4">Usuários ilimitados</li>
+                      <li className="xl:mb-4">Treinamento gratuito</li>
                       <li>Suporte 24h</li>
                     </ul>
                   </div>
