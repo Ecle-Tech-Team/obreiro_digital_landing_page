@@ -132,7 +132,7 @@ export default function Home() {
           />
         </div>
 
-        <Card className="w-[100%] flex flex-col justify-center border-0">
+        <Card className="w-[100%] flex flex-col justify-center border-0 xl:mb-15">
           <div className="xl:flex xl:items-center xl:mb-0">
             <CardContent className="flex flex-col text-center">
               <h1 className="text-7xl xl:mt-[8vh] font-bold text-[#1E1E1E] font-poppins">
@@ -181,9 +181,9 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="flex flex-col items-center mt-[12vh] mb-11 font-poppins">
+      <section className="flex flex-col items-center mt-[12vh] mb-11  font-poppins">
         <div className="flex justify-center">
-          <Card className="w-[40vh] xl:w-[185vh] xl:h-[100vh] rounded-3xl">
+          <Card className="w-[40vh] xl:w-[185vh] xl:h-[100vh] rounded-3xl xl:mb-25">
             <CardContent className="flex items-center flex-col">
               <div className="xl:flex">
                 <div className="xl:w-[30%]">
@@ -292,7 +292,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col justify-center items-center font-poppins">
-        <Card className="w-[40vh] xl:w-[185vh] rounded-3xl h-auto bg-[#5271FF] mb-20">
+        <Card className="w-[40vh] xl:w-[185vh] rounded-3xl h-auto bg-[#5271FF] mb-20 xl:mb-35">
           <CardContent>
             <div className="text-white text-center flex flex-col items-center font-bold">
               <h3 className="text-lg font-medium">Pastores e Líderes</h3>
@@ -346,7 +346,7 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        <Card className="h-auto w-[40vh] xl:w-[185vh] bg-[#5271FF] rounded-3xl mb-20">
+        <Card className="h-auto w-[40vh] xl:w-[185vh] bg-[#5271FF] rounded-3xl mb-20 xl:mb-35">
           <CardContent>
             <div className="text-white text-center flex flex-col items-center font-bold">
               <h3 className="text-lg font-medium">Pastores e Líderes</h3>
@@ -403,7 +403,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col items-center font-poppins text-[#1E1E1E]">
-        <Card className="w-[40vh] xl:w-[185vh] xl:h-[110vh] rounded-3xl">
+        <Card className="w-[40vh] xl:w-[185vh] xl:h-[110vh] rounded-3xl xl:mb-20">
           <CardContent className="mt-9 mb-9">
             <div className="text-center xl:text-start flex flex-col items-center xl:items-start xl:ml-15 xl:mb-15">
               <h3 className="text-[#676767] font-semibold text-xl">
@@ -494,7 +494,7 @@ export default function Home() {
       </section>
 
       <section className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
-        <Card className="w-[40vh] xl:w-[185vh] rounded-3xl">
+        <Card className="w-[40vh] xl:w-[185vh] rounded-3xl xl:mb-20">
           <CardContent className="xl:px-[10vh]">
             <div className="text-center xl:text-start xl:mb-10 xl:mt-10 xl:w-[80vh]">
               <h3 className="text-[#676767] font-semibold text-xl">
@@ -575,7 +575,7 @@ export default function Home() {
       </section>
 
       <section className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
-        <Card className="w-[40vh] xl:w-[185vh] rounded-3xl">
+        <Card className="w-[40vh] xl:w-[185vh] xl:h-[100vh] rounded-3xl xl:mb-20">
           <CardContent className="xl:flex">
             <div className="xl:w-[50vh] xl:flex xl:flex-col xl:m-10">
               <div className="text-center xl:text-start">
@@ -609,7 +609,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col items-center mb-5 xl:mx-60 xl:my-25">
-              <Card className="bg-[#5271FF] w-[32vh] xl:w-[60vh] xl:h-[65vh] rounded-3xl">
+              <Card className="bg-[#5271FF] w-[32vh] xl:w-[60vh] xl:h-[65vh] rounded-3xl ">
                 <CardContent className="xl:my-6">
                   <div className="flex flex-row justify-center items-center">
                     <Image
@@ -649,9 +649,9 @@ export default function Home() {
       </section>
 
       <section className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
-        <Card className="w-[40vh] xl:w-[185vh] rounded-3xl">
+        <Card className="w-[40vh] xl:w-[185vh] xl:h-[100vh] rounded-3xl xl:mb-20">
           <CardContent>
-            <div className="text-center mb-11">
+            <div className="text-center mb-25">
               <h3 className="text-[#676767] text-xl font-semibold">
                 Você pode contribuir com o projeto!
               </h3>
@@ -768,18 +768,24 @@ export default function Home() {
       </section>
 
       <section className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
-        <Card className="w-[40vh] rounded-3xl bg-[#5271FF] text-white">
-          <CardContent>
-            <h1 className="text-center text-3xl font-bold mb-8">
-              Precisa de uma versão própria do Obreiro Digital?
-            </h1>
-
-            <h3 className="font-nunito text-center text-lg font-semibold">
-              Entre em contato conosco para construirmos uma solução específica
-              para a sua igreja
-            </h3>
-
-            <div>
+        <Card className="w-[40vh] xl:w-[185vh] rounded-3xl bg-[#5271FF] text-white xl:mb-20">
+          <CardContent className="flex flex-col xl:flex-row xl:items-center">
+            <div className="xl:flex xl:flex-col xl:w-1/2 xl:ml-20">
+              <h1 className="text-center xl:text-start text-3xl xl:text-4xl font-bold mb-8">
+                Precisa de uma versão própria do Obreiro Digital?
+              </h1>
+              <h3 className="font-nunito text-center xl:text-start text-lg xl:text-2xl font-semibold xl:font-medium">
+                Entre em contato conosco para construirmos uma solução
+                específica para a sua igreja
+              </h3>
+              {/*Button desktop*/}
+              <div className="hidden xl:flex items-center justify-start mt-10 mb-2">
+                <Button className="bg-white text-[#5271FF] font-semibold w-[20vh]">
+                  Entre em Contato
+                </Button>
+              </div>
+            </div>
+            <div className="xl:w-[90vh] flex justify-center">
               <Image
                 className="mr-3"
                 alt="Obreiro Digital"
@@ -788,8 +794,8 @@ export default function Home() {
                 width={1200}
               />
             </div>
-
-            <div className="flex items-center justify-center mt-8 mb-2">
+            {/*Button mobile*/}
+            <div className="flex items-center justify-center mt-8 mb-2 xl:hidden">
               <Button className="bg-white text-[#5271FF] w-[20vh]">
                 Entre em Contato
               </Button>
@@ -798,7 +804,7 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="mt-30 mb-30">
+      <section className="mt-30 mb-30 xl:mb-45">
         <div className="text-center mb-8">
           <h3 className="text-[#676767] text-xl font-semibold mb-4">
             Prepare a sua igreja para o futuro
@@ -808,8 +814,8 @@ export default function Home() {
             <span className="text-[#5271FF]">hoje!</span>
           </h1>
         </div>
-        <div className="flex flex-col items-center">
-          <Button className="text-white bg-[#5271FF] text-md mb-5">
+        <div className="flex flex-col xl:flex-row xl:justify-center items-center">
+          <Button className="text-white bg-[#5271FF] text-md mb-5 xl:mb-0 xl:mx-5">
             Acesse Gratuitamente
           </Button>
           <Button className="bg-transparent border-2 border-[#5271FF] rounded-lg text-[#5271FF] text-md font-medium">
@@ -818,101 +824,105 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#5271FF] w-[100%] font-poppins">
-        <div className="grid grid-cols-2 text-white pt-12">
-          <div className="pl-5">
-            <div className="flex items-center">
-              <Image
-                className="w-[5vh] h-[5vh] mr-3"
-                alt="Obreiro Digital"
-                src="/logo.png"
-                height={750}
-                width={1200}
-              />
-              <h1 className="text-white text-2xl font-bold">
-                Obreiro <br />
-                Digital
-              </h1>
+      <section className="bg-[#5271FF] w-[100%]  font-poppins">
+        <div className="xl:flex xl:justify-evenly">
+          <div className="grid grid-cols-2 xl:flex xl:flex-col text-white pt-12">
+            <div className="pl-5">
+              <div className="flex items-center">
+                <Image
+                  className="w-[5vh] h-[5vh] mr-3"
+                  alt="Obreiro Digital"
+                  src="/logo.png"
+                  height={750}
+                  width={1200}
+                />
+                <h1 className="text-white text-2xl font-bold">
+                  Obreiro <br />
+                  Digital
+                </h1>
+              </div>
+
+              <div className="flex text-[#5271FF] gap-2 mt-4">
+                <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
+                  <Facebook className="w-6 h-6" />
+                </div>
+                <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
+                  <Instagram className="w-6 h-6" />
+                </div>
+                <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
+                  <Linkedin className="w-6 h-6" />
+                </div>
+                <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
+                  <Github className="w-6 h-6" />
+                </div>
+              </div>
             </div>
 
-            <div className="flex text-[#5271FF] gap-2 mt-4">
-              <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
-                <Facebook className="w-6 h-6" />
+            <div className="xl:pt-7">
+              <div className="flex items-center w-[30vh] gap-2 text-sm mb-5">
+                <Mail className="w-7 h-7" />
+                <p>ecletecnologia@gmail.com</p>
               </div>
-              <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
-                <Instagram className="w-6 h-6" />
+              <div className="flex items-center w-[30vh] gap-2 text-sm mb-5">
+                <Phone className="w-7 h-7" />
+                <p>(11) 9952-0702</p>
               </div>
-              <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
-                <Linkedin className="w-6 h-6" />
-              </div>
-              <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
-                <Github className="w-6 h-6" />
+              <div className="flex items-center w-[30vh] gap-2 text-sm mb-13">
+                <Clock className="w-7 h-7" />
+                <p>Seg-Sex das 8h às 18h</p>
               </div>
             </div>
           </div>
 
-          <div>
-            <div className="flex items-center w-[30vh] gap-2 text-sm mb-5">
-              <Mail className="w-7 h-7" />
-              <p>ecletecnologia@gmail.com</p>
+          <div className="xl:flex xl:justify- pt-12">
+            <div className="flex">
+              <div className="pl-5 text-white">
+                <h1 className="text-3xl font-bold mb-3">Início</h1>
+                <ul className="text-xl font-semibold">
+                  <li className="mb-3">Início</li>
+                  <li className="mb-3">Missão</li>
+                  <li className="mb-3">Recursos</li>
+                  <li className="mb-3">Implementação</li>
+                  <li className="mb-12">Financiamento</li>
+                </ul>
+              </div>
+
+              <div className="pl-10 xl:pl-20 text-white">
+                <h1 className="text-3xl font-bold mb-3">Recursos</h1>
+                <ul className="text-xl font-semibold">
+                  <li className="mb-3">Gestão</li>
+                  <li className="mb-3">Apoio</li>
+                  <li className="mb-3">Termos de Uso</li>
+                  <li className="mb-3">Termos de Privacidade</li>
+                </ul>
+              </div>
             </div>
-            <div className="flex items-center w-[30vh] gap-2 text-sm mb-5">
-              <Phone className="w-7 h-7" />
-              <p>(11) 9952-0702</p>
+
+            <div className="pl-5 xl:pl-20 text-white">
+              <h1 className="text-3xl font-bold mb-3">Implementação</h1>
+              <ul className="text-xl font-semibold">
+                <li className="mb-3">Cadastro</li>
+                <li className="mb-3">Treinamento</li>
+                <li className="mb-3">Registro</li>
+                <li className="mb-12">Segurança de Dados</li>
+              </ul>
             </div>
-            <div className="flex items-center w-[30vh] gap-2 text-sm mb-13">
-              <Clock className="w-7 h-7" />
-              <p>Seg-Sex das 8h às 18h</p>
+
+            <div className="pl-5 xl:pl-20 text-white">
+              <h1 className="text-3xl font-bold mb-3">Planos</h1>
+              <ul className="text-xl font-semibold">
+                <li className="mb-3">Ofertante</li>
+                <li className="mb-3">Bronze</li>
+                <li className="mb-3">Prata</li>
+                <li className="mb-3">Ouro</li>
+                <li className="mb-15">Patriarca</li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <div className="flex">
-          <div className="pl-5 text-white">
-            <h1 className="text-3xl font-bold mb-3">Início</h1>
-            <ul className="text-xl font-semibold">
-              <li className="mb-3">Início</li>
-              <li className="mb-3">Missão</li>
-              <li className="mb-3">Recursos</li>
-              <li className="mb-3">Implementação</li>
-              <li className="mb-12">Financiamento</li>
-            </ul>
-          </div>
-
-          <div className="pl-10 text-white">
-            <h1 className="text-3xl font-bold mb-3">Recursos</h1>
-            <ul className="text-xl font-semibold">
-              <li className="mb-3">Gestão</li>
-              <li className="mb-3">Apoio</li>
-              <li className="mb-3">Termos de Uso</li>
-              <li className="mb-3">Termos de Privacidade</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="pl-5 text-white">
-          <h1 className="text-3xl font-bold mb-3">Implementação</h1>
-          <ul className="text-xl font-semibold">
-            <li className="mb-3">Cadastro</li>
-            <li className="mb-3">Treinamento</li>
-            <li className="mb-3">Registro</li>
-            <li className="mb-12">Segurança de Dados</li>
-          </ul>
-        </div>
-
-        <div className="pl-5 text-white">
-          <h1 className="text-3xl font-bold mb-3">Planos</h1>
-          <ul className="text-xl font-semibold">
-            <li className="mb-3">Ofertante</li>
-            <li className="mb-3">Bronze</li>
-            <li className="mb-3">Prata</li>
-            <li className="mb-3">Ouro</li>
-            <li className="mb-15">Patriarca</li>
-          </ul>
-        </div>
-
-        <div className="pl-5 text-white">
-          <h3 className="text-center text-base">
+        <div className="pl-5  text-white bg-[#5271FF] w-[100%] h-[100%] xl:flex font-poppins">
+          <h3 className="text-center text-base w-[100%]">
             © Copyright 2025. Ecle Tech Team. Todos os direitos reservados.
           </h3>
         </div>
