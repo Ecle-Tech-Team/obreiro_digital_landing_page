@@ -25,11 +25,72 @@ import {
 } from "@/components/ui/carousel";
 
 export default function Home() {
+  const plans = [
+    {
+      title: "Starter",
+      price: "R$10,00",
+      bgColor: "bg-[#F5F5F5]",
+      buttonColor: "bg-[#5271FF] text-white",
+      logo: "/logo-dark.png",
+      features: [
+        "Nome no hall de lendas",
+        "Cursos extras (informática, design, social media, gestão)",
+      ],
+    },
+    {
+      title: "Bronze",
+      price: "R$49,99",
+      bgColor: "bg-[#5271FF] text-white",
+      buttonColor: "bg-white text-[#5271FF]",
+      logo: "/logo.png",
+      features: [
+        "Tudo do starter",
+        "Certificado de conclusão de cursos extras",
+      ],
+    },
+    {
+      title: "Prata",
+      price: "R$299,00",
+      bgColor: "bg-[#F5F5F5]",
+      buttonColor: "bg-[#5271FF] text-white",
+      logo: "/logo-dark.png",
+      features: [
+        "Tudo dos planos anteriores",
+        "Suporte VIP",
+        "Reunião com os devs",
+      ],
+    },
+    {
+      title: "Ouro",
+      price: "R$499,00",
+      bgColor: "bg-[#F5F5F5]",
+      buttonColor: "bg-[#5271FF] text-white",
+      logo: "/logo-dark.png",
+      features: [
+        "Tudo dos planos anteriores",
+        "Acesso a versões beta",
+        "Logo da Igreja no sistema",
+      ],
+    },
+    {
+      title: "Patriarca",
+      price: "R$1.000,00",
+      bgColor: "bg-[#F5F5F5]",
+      buttonColor: "bg-[#5271FF] text-white",
+      logo: "/logo-dark.png",
+      features: [
+        "Tudo dos planos anteriores",
+        "Mentoria de gestão da sua igreja",
+        "Mimos (chaveiros, canecas e camisetas)",
+      ],
+    },
+  ];
+
   return (
-    <main className="font-(family-name:--font-poppins)">
+    <main className="font-poppins">
       <Header />
 
-      <section className=" h-[60vh] w-auto flex flex-col items-center font-(family-name:--font-poppins)">
+      <section className="h-[60vh] w-auto flex flex-col items-center font-poppins">
         <div className="text-center font-extrabold mt-[5vh] xl:mt-[16vh]">
           <h1 className="text-5xl flex justify-center text-[#1E1E1E]">
             Eleve sua gestão com o
@@ -52,7 +113,7 @@ export default function Home() {
             Veja uma demonstração
           </button>
         </div>
-        <div className="mt-[3vh] w-[50vh] flex justify-evenly xl:mt-[5vh] ">
+        <div className="mt-[3vh] w-[50vh] flex justify-evenly xl:mt-[5vh]">
           <Check />
           <h2>Sem custo de acesso</h2>
           <Check />
@@ -61,7 +122,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col items-center mb-11 xl:mt-[20vh]">
-        <div className=" w-full flex justify-center">
+        <div className="w-full flex justify-center">
           <Image
             className="w-[100%] h-[25%] xl:w-[80%] xl:h-[50%]"
             alt="Obreiro Digital"
@@ -73,45 +134,45 @@ export default function Home() {
 
         <Card className="w-[100%] flex flex-col justify-center border-0">
           <div className="xl:flex xl:items-center xl:mb-0">
-            <CardContent className="flex flex-col text-center ">
-              <h1 className="text-7xl xl:mt-[8vh] font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
+            <CardContent className="flex flex-col text-center">
+              <h1 className="text-7xl xl:mt-[8vh] font-bold text-[#1E1E1E] font-poppins">
                 3º
               </h1>
               <div className="flex justify-center">
-                <h2 className="text-xl font-bold xl:mb-5 text-[#1E1E1E] font-(family-name:--font-poppins)">
+                <h2 className="text-xl font-bold xl:mb-5 text-[#1E1E1E] font-poppins">
                   Maior Causa de{" "}
                   <span className="text-[#5271FF]">Desfiliação</span>
                 </h2>
               </div>
-              <p className="font-semibold font-(family-name:--font-nunito) mt-[2vh mb-[8vh]">
-                São escândalos financeiros e abusos espirituais por má
+              <p className="font-semibold font-nunito mt-[2vh] mb-[8vh]">
+                São escândalos financeiros e abusos espirituais por má
                 governança dentro das igrejas, segundo teólogos
               </p>
             </CardContent>
-            <CardContent className="flex flex-col text-center ">
-              <h1 className="text-7xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
+            <CardContent className="flex flex-col text-center">
+              <h1 className="text-7xl font-bold text-[#1E1E1E] font-poppins">
                 76%
               </h1>
               <div className="flex justify-center">
-                <h2 className="text-xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
+                <h2 className="text-xl font-bold text-[#1E1E1E] font-poppins">
                   dos Novos <span className="text-[#5271FF]">Cristãos</span>
                 </h2>
               </div>
-              <p className="font-semibold font-(family-name:--font-nunito) mt-[2vh] xl:mb-0 mb-[8vh]">
+              <p className="font-semibold font-nunito mt-[2vh] xl:mb-0 mb-[8vh]">
                 Em igrejas buscam informações online (horários, programas
                 sociais, transparência financeira) antes de visitar uma igreja
               </p>
             </CardContent>
-            <CardContent className="flex flex-col text-center ">
-              <h1 className="text-7xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
+            <CardContent className="flex flex-col text-center">
+              <h1 className="text-7xl font-bold text-[#1E1E1E] font-poppins">
                 3x
               </h1>
               <div className="flex justify-center">
-                <h2 className="text-xl font-bold text-[#1E1E1E] font-(family-name:--font-poppins)">
+                <h2 className="text-xl font-bold text-[#1E1E1E] font-poppins">
                   Mais Risco de <span className="text-[#5271FF]">Fechar</span>
                 </h2>
               </div>
-              <p className="font-semibold font-(family-name:--font-nunito) mt-[2vh] xl:mb-0 mb-[8vh]">
+              <p className="font-semibold font-nunito mt-[2vh] xl:mb-0 mb-[8vh]">
                 Igrejas sem controle de fluxo de caixa têm mais chance de fechar
                 as portas em até 5 anos em média no Brasil
               </p>
@@ -120,9 +181,9 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="flex flex-col items-center mt-[12vh] mb-11 font-(family-name:--font-poppins)">
+      <section className="flex flex-col items-center mt-[12vh] mb-11 font-poppins">
         <div className="flex justify-center">
-          <Card className="w-[40vh] xl:w-[185vh] xl:h-[100vh] rounded-4xl">
+          <Card className="w-[40vh] xl:w-[185vh] xl:h-[100vh] rounded-3xl">
             <CardContent className="flex items-center flex-col">
               <div className="xl:flex">
                 <div className="xl:w-[30%]">
@@ -132,7 +193,7 @@ export default function Home() {
                       <br />
                       <span className="text-[#5271FF]">Obreiro Digital?</span>
                     </h1>
-                    <h3 className="font-(family-name:--font-nunito) font-bold text-[#1E1E1E]">
+                    <h3 className="font-nunito font-bold text-[#1E1E1E]">
                       Temos como missão não só entregar recursos e eficiência na
                       gestão de igrejas, queremos elevar o{" "}
                       <span className="text-[#5271FF]">
@@ -230,18 +291,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col jutify-center items-center font-(family-name:--font-poppins)">
-        <Card className="w-[40vh] xl:w-[185vh] rounded-4xl h-auto bg-[#5271FF] mb-20">
+      <section className="flex flex-col justify-center items-center font-poppins">
+        <Card className="w-[40vh] xl:w-[185vh] rounded-3xl h-auto bg-[#5271FF] mb-20">
           <CardContent>
             <div className="text-white text-center flex flex-col items-center font-bold">
               <h3 className="text-lg font-medium">Pastores e Líderes</h3>
-              <h1 className="text-4xl ">Recursos de</h1>
-              <h1 className="text-[#5271FF] bg-white w-auto text-4xl rounded-lg pr-1 pl-1 ">
+              <h1 className="text-4xl">Recursos de</h1>
+              <h1 className="text-[#5271FF] bg-white w-auto text-4xl rounded-lg pr-1 pl-1">
                 Gestão
               </h1>
             </div>
 
-            <Carousel className="mt-9 ">
+            <Carousel className="mt-9">
               <CarouselContent className="w-auto">
                 <CarouselItem className="bg-white h-auto rounded-3xl flex flex-col items-center">
                   <h1 className="font-bold text-lg">Membros e Departamentos</h1>
@@ -285,17 +346,17 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        <Card className=" h-auto w-[40vh] xl:w-[185vh] bg-[#5271FF] rounded-4xl mb-20">
+        <Card className="h-auto w-[40vh] xl:w-[185vh] bg-[#5271FF] rounded-3xl mb-20">
           <CardContent>
             <div className="text-white text-center flex flex-col items-center font-bold">
               <h3 className="text-lg font-medium">Pastores e Líderes</h3>
-              <h1 className="text-4xl ">Recursos de</h1>
-              <h1 className="text-[#5271FF] bg-white w-auto text-4xl rounded-lg pr-1 pl-1 ">
+              <h1 className="text-4xl">Recursos de</h1>
+              <h1 className="text-[#5271FF] bg-white w-auto text-4xl rounded-lg pr-1 pl-1">
                 Apoio
               </h1>
             </div>
 
-            <Carousel className="mt-9 ">
+            <Carousel className="mt-9">
               <CarouselContent className="w-auto">
                 <CarouselItem className="bg-white h-auto rounded-3xl flex flex-col items-center">
                   <h1 className="font-bold text-lg">Gestão de Visitantes</h1>
@@ -341,15 +402,14 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className=" flex flex-col items-center font-(family-name:--font-poppins) text-[#1E1E1E]">
-        <Card className="w-[40vh] xl:w-[185vh] xl:h-[110vh] rounded-4xl">
+      <section className="flex flex-col items-center font-poppins text-[#1E1E1E]">
+        <Card className="w-[40vh] xl:w-[185vh] xl:h-[110vh] rounded-3xl">
           <CardContent className="mt-9 mb-9">
             <div className="text-center xl:text-start flex flex-col items-center xl:items-start xl:ml-15 xl:mb-15">
               <h3 className="text-[#676767] font-semibold text-xl">
                 O que os usuários acharam?
               </h3>
               <h1 className="text-4xl xl:text-5xl font-bold mb-3">
-                {" "}
                 Confiado em <span className="text-[#5271FF]">Igrejas</span>
               </h1>
               <p className="text-sm xl:text-base xl:font-semibold w-48 xl:w-[40%] mb-11">
@@ -362,7 +422,7 @@ export default function Home() {
               <Card className="bg-[#F5F5F5] w-[32vh] xl:w-[50vh] xl:h-[50vh] mb-11 xl:mb-0 shadow-md">
                 <CardContent className="">
                   <h1 className="text-2xl font-bold mb-5">Gestão Via Dados</h1>
-                  <h3 className=" mb-15">
+                  <h3 className="mb-15">
                     “Controle e histórico completo de tudo o que acontece na sua
                     igreja, garantindo”
                   </h3>
@@ -385,7 +445,7 @@ export default function Home() {
               <Card className="bg-[#F5F5F5] w-[32vh] xl:w-[50vh] xl:h-[50vh] mb-11 xl:mb-0 shadow-md">
                 <CardContent className="">
                   <h1 className="text-2xl font-bold mb-5">Gestão Via Dados</h1>
-                  <h3 className=" mb-15">
+                  <h3 className="mb-15">
                     “Controle e histórico completo de tudo o que acontece na sua
                     igreja, garantindo”
                   </h3>
@@ -408,7 +468,7 @@ export default function Home() {
               <Card className="bg-[#F5F5F5] w-[32vh] xl:w-[50vh] xl:h-[50vh] shadow-md">
                 <CardContent className="">
                   <h1 className="text-2xl font-bold mb-5">Gestão Via Dados</h1>
-                  <h3 className=" mb-15">
+                  <h3 className="mb-15">
                     “Controle e histórico completo de tudo o que acontece na sua
                     igreja, garantindo”
                   </h3>
@@ -433,16 +493,15 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="mt-20 text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
-        <Card className="w-[40vh] xl:h-[100vh] xl:w-[185vh] rounded-4xl ">
-          <CardContent className=" xl:px-[10vh]">
+      <section className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
+        <Card className="w-[40vh] xl:w-[185vh] rounded-3xl">
+          <CardContent className="xl:px-[10vh]">
             <div className="text-center xl:text-start xl:mb-10 xl:mt-10 xl:w-[80vh]">
               <h3 className="text-[#676767] font-semibold text-xl">
                 Passo a Passo
               </h3>
               <h1 className="text-4xl xl:text-5xl font-bold">
-                Implementação do{" "}
-                <span className="text-[#5271FF]"> Sistema</span>
+                Implementação do <span className="text-[#5271FF]">Sistema</span>
               </h1>
               <p className="text-sm xl:text-base xl:font-semibold mt-6">
                 Esses são os passos que a igreja precisa fazer para conseguir
@@ -456,7 +515,7 @@ export default function Home() {
                 <p className="text-base mb-8">
                   No primeiro contato, você responsável pela igreja, cadastra
                   ela no sistema e cria uma conta para você e as outras pessoas
-                  na gestão e apoio{" "}
+                  na gestão e apoio
                 </p>
               </div>
 
@@ -515,15 +574,15 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="mt-20 text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
-        <Card className="w-[40vh] xl:w-[185vh] xl:h-[100vh] rounded-4xl">
+      <section className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
+        <Card className="w-[40vh] xl:w-[185vh] rounded-3xl">
           <CardContent className="xl:flex">
             <div className="xl:w-[50vh] xl:flex xl:flex-col xl:m-10">
               <div className="text-center xl:text-start">
                 <h3 className="text-[#676767] text-xl font-semibold">
                   Quanto custa?
                 </h3>
-                <h1 className="text-4xl font-bold mb-8 ">Preço</h1>
+                <h1 className="text-4xl font-bold mb-8">Preço</h1>
               </div>
 
               <div>
@@ -540,7 +599,7 @@ export default function Home() {
                   <br />
                   Nosso objetivo é alcançar o máximo de pessoas possível
                   deixando o sistema financeiramente{" "}
-                  <span className="text-[#5271FF]">viável </span>a todos!
+                  <span className="text-[#5271FF]">viável</span> a todos!
                 </p>
 
                 <Button className="bg-[#5271FF] pl-6 pr-6 mt-8 mb-8">
@@ -550,7 +609,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col items-center mb-5 xl:mx-60 xl:my-25">
-              <Card className="bg-[#5271FF] w-[32vh] xl:w-[60vh] xl:h-[65vh] rounded-4xl">
+              <Card className="bg-[#5271FF] w-[32vh] xl:w-[60vh] xl:h-[65vh] rounded-3xl">
                 <CardContent className="xl:my-6">
                   <div className="flex flex-row justify-center items-center">
                     <Image
@@ -574,7 +633,7 @@ export default function Home() {
                     <h1 className="text-white text-5xl mb-8">R$00,00</h1>
                   </div>
 
-                  <div className="text-white flex flex-col items-center text-lg mb-5 ">
+                  <div className="text-white flex flex-col items-center text-lg mb-5">
                     <ul className="list-disc xl:text-xl xl:font-semibold xl:gap-16">
                       <li className="xl:mb-4">Uso ilimitado no sistema</li>
                       <li className="xl:mb-4">Usuários ilimitados</li>
@@ -589,8 +648,8 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="mt-20 text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
-        <Card className="w-[40vh] rounded-4xl">
+      <section className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
+        <Card className="w-[40vh] xl:w-[185vh] rounded-3xl">
           <CardContent>
             <div className="text-center mb-11">
               <h3 className="text-[#676767] text-xl font-semibold">
@@ -601,226 +660,121 @@ export default function Home() {
               </h1>
             </div>
 
-            <div className=" flex flex-col items-center mb-10">
-              <Card className="w-[32vh] rounded-4xl flex flex-col items-center bg-[#F5F5F5]">
-                <CardContent>
-                  <div className="flex flex-row justify-center items-center mb-5">
-                    <Image
-                      className="w-[5.5vh] h-[5.5vh] mr-3"
-                      alt="Obreiro Digital"
-                      src="/logo-dark.png"
-                      height={750}
-                      width={1200}
-                    />
-                    <h1 className="text-xl font-bold">
-                      OBREIRO
-                      <br />
-                      DIGITAL
-                    </h1>
-                  </div>
+            <div className="hidden xl:block">
+              <Carousel className="w-full max-w-[150vh] mx-auto">
+                <CarouselContent>
+                  {plans.map((plan, index) => (
+                    <CarouselItem
+                      key={index}
+                      className="md:basis-1/2 xl:basis-1/3 px-2"
+                    >
+                      <Card
+                        className={`w-[32vh] xl:w-[45vh] rounded-3xl flex flex-col items-center ${plan.bgColor}`}
+                      >
+                        <CardContent>
+                          <div className="flex flex-row justify-center items-center mb-5">
+                            <Image
+                              className="w-[5.5vh] h-[5.5vh] mr-3"
+                              alt="Obreiro Digital"
+                              src={plan.logo}
+                              height={750}
+                              width={1200}
+                            />
+                            <h1 className="text-xl font-bold">
+                              OBREIRO
+                              <br />
+                              DIGITAL
+                            </h1>
+                          </div>
 
-                  <div className="text-center mb-10">
-                    <h1 className="text-2xl font-bold">Starter</h1>
-                    <h1 className="text-4xl font-bold">R$10,00</h1>
-                  </div>
+                          <div className="text-center mb-10">
+                            <h1 className="text-2xl font-bold">{plan.title}</h1>
+                            <h1 className="text-4xl font-bold">{plan.price}</h1>
+                          </div>
 
-                  <div className="flex flex-col ml-6 font-medium">
-                    <ul className="list-disc">
-                      <li>Nome no hall de lendas</li>
-                      <br />
-                      <li>
-                        Cursos extras (informática, design, social media,
-                        gestão)
-                      </li>
-                    </ul>
-                  </div>
+                          <div className="flex flex-col ml-6 font-medium">
+                            <ul className="list-disc">
+                              {plan.features.map((feature, idx) => (
+                                <li key={idx} className="mb-4">
+                                  {feature}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
 
-                  <div className="flex justify-center mt-20">
-                    <Button className="bg-[#5271FF] w-[25vh]">
-                      Quero Apoiar
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+                          <div className="flex justify-center mt-10">
+                            <Button className={`w-[25vh] ${plan.buttonColor}`}>
+                              Quero Apoiar
+                            </Button>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
             </div>
 
-            <div className=" flex flex-col items-center mb-10">
-              <Card className="w-[32vh] rounded-4xl flex flex-col items-center bg-[#5271FF] text-white">
-                <CardContent>
-                  <div className="flex flex-row justify-center items-center mb-5">
-                    <Image
-                      className="w-[5.5vh] h-[5.5vh] mr-3"
-                      alt="Obreiro Digital"
-                      src="/logo.png"
-                      height={750}
-                      width={1200}
-                    />
-                    <h1 className="text-xl font-bold">
-                      OBREIRO
-                      <br />
-                      DIGITAL
-                    </h1>
-                  </div>
+            <div className="xl:hidden flex flex-col items-center gap-10">
+              {plans.map((plan, index) => (
+                <Card
+                  key={index}
+                  className={`w-[32vh] rounded-3xl flex flex-col items-center ${plan.bgColor}`}
+                >
+                  <CardContent>
+                    <div className="flex flex-row justify-center items-center mb-5">
+                      <Image
+                        className="w-[5.5vh] h-[5.5vh] mr-3"
+                        alt="Obreiro Digital"
+                        src={plan.logo}
+                        height={750}
+                        width={1200}
+                      />
+                      <h1 className="text-xl font-bold">
+                        OBREIRO
+                        <br />
+                        DIGITAL
+                      </h1>
+                    </div>
 
-                  <div className="text-center mb-10">
-                    <h1 className="text-2xl font-bold">Bronze</h1>
-                    <h1 className="text-4xl font-bold">R$49,99</h1>
-                  </div>
+                    <div className="text-center mb-10">
+                      <h1 className="text-2xl font-bold">{plan.title}</h1>
+                      <h1 className="text-4xl font-bold">{plan.price}</h1>
+                    </div>
 
-                  <div className="flex flex-col ml-6 font-medium">
-                    <ul className="list-disc">
-                      <li>Tudo do starter</li>
-                      <br />
-                      <li>Certificado de conclusão de cursos extras</li>
-                    </ul>
-                  </div>
+                    <div className="flex flex-col ml-6 font-medium">
+                      <ul className="list-disc">
+                        {plan.features.map((feature, idx) => (
+                          <li key={idx} className="mb-4">
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
-                  <div className="flex justify-center mt-20">
-                    <Button className="bg-white w-[25vh] text-[#5271FF]">
-                      Quero Apoiar
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className=" flex flex-col items-center mb-10">
-              <Card className="w-[32vh] rounded-4xl flex flex-col items-center bg-[#F5F5F5]">
-                <CardContent>
-                  <div className="flex flex-row justify-center items-center mb-5">
-                    <Image
-                      className="w-[5.5vh] h-[5.5vh] mr-3"
-                      alt="Obreiro Digital"
-                      src="/logo-dark.png"
-                      height={750}
-                      width={1200}
-                    />
-                    <h1 className="text-xl font-bold">
-                      OBREIRO
-                      <br />
-                      DIGITAL
-                    </h1>
-                  </div>
-
-                  <div className="text-center mb-10">
-                    <h1 className="text-2xl font-bold">Prata</h1>
-                    <h1 className="text-4xl font-bold">R$299,00</h1>
-                  </div>
-
-                  <div className="flex flex-col ml-6 font-medium">
-                    <ul className="list-disc">
-                      <li>Tudo dos planos ateriores</li>
-                      <br />
-                      <li>Suporte VIP</li>
-                      <br />
-                      <li>Reunião com os devs</li>
-                    </ul>
-                  </div>
-
-                  <div className="flex justify-center mt-20">
-                    <Button className="bg-[#5271FF] w-[25vh]">
-                      Quero Apoiar
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className=" flex flex-col items-center mb-10">
-              <Card className="w-[32vh] rounded-4xl flex flex-col items-center bg-[#F5F5F5]">
-                <CardContent>
-                  <div className="flex flex-row justify-center items-center mb-5">
-                    <Image
-                      className="w-[5.5vh] h-[5.5vh] mr-3"
-                      alt="Obreiro Digital"
-                      src="/logo-dark.png"
-                      height={750}
-                      width={1200}
-                    />
-                    <h1 className="text-xl font-bold">
-                      OBREIRO
-                      <br />
-                      DIGITAL
-                    </h1>
-                  </div>
-
-                  <div className="text-center mb-10">
-                    <h1 className="text-2xl font-bold">Ouro</h1>
-                    <h1 className="text-4xl font-bold">R$499,00</h1>
-                  </div>
-
-                  <div className="flex flex-col ml-6 font-medium">
-                    <ul className="list-disc">
-                      <li>Tudo dos planos ateriores</li>
-                      <br />
-                      <li>Acesso a versões beta</li>
-                      <br />
-                      <li>Logo da Igreja no sistema</li>
-                    </ul>
-                  </div>
-
-                  <div className="flex justify-center mt-20">
-                    <Button className="bg-[#5271FF] w-[25vh]">
-                      Quero Apoiar
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className=" flex flex-col items-center mb-2">
-              <Card className="w-[32vh] rounded-4xl flex flex-col items-center bg-[#F5F5F5]">
-                <CardContent>
-                  <div className="flex flex-row justify-center items-center mb-5">
-                    <Image
-                      className="w-[5.5vh] h-[5.5vh] mr-3"
-                      alt="Obreiro Digital"
-                      src="/logo-dark.png"
-                      height={750}
-                      width={1200}
-                    />
-                    <h1 className="text-xl font-bold">
-                      OBREIRO
-                      <br />
-                      DIGITAL
-                    </h1>
-                  </div>
-
-                  <div className="text-center mb-10">
-                    <h1 className="text-2xl font-bold">Patriarca</h1>
-                    <h1 className="text-4xl font-bold">R$1.000,00</h1>
-                  </div>
-
-                  <div className="flex flex-col ml-6 font-medium">
-                    <ul className="list-disc">
-                      <li>Tudo dos planos ateriores</li>
-                      <br />
-                      <li>Mentoria de gestão da sua igreja</li>
-                      <br />
-                      <li>Mimos (chaveiros, canecas e camisetas)</li>
-                    </ul>
-                  </div>
-
-                  <div className="flex justify-center mt-20">
-                    <Button className="bg-[#5271FF] w-[25vh]">
-                      Quero Apoiar
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+                    <div className="flex justify-center mt-10">
+                      <Button className={`w-[25vh] ${plan.buttonColor}`}>
+                        Quero Apoiar
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </CardContent>
         </Card>
       </section>
 
-      <section className="mt-20 text-[#1E1E1E] font-(family-name:--font-poppins) flex flex-col items-center">
-        <Card className="w-[40vh] rounded-4xl bg-[#5271FF] text-white">
+      <section className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
+        <Card className="w-[40vh] rounded-3xl bg-[#5271FF] text-white">
           <CardContent>
             <h1 className="text-center text-3xl font-bold mb-8">
               Precisa de uma versão própria do Obreiro Digital?
             </h1>
 
-            <h3 className="font-(family-name:--font-nunito) text-center text-lg font-semibold">
+            <h3 className="font-nunito text-center text-lg font-semibold">
               Entre em contato conosco para construirmos uma solução específica
               para a sua igreja
             </h3>
@@ -858,13 +812,13 @@ export default function Home() {
           <Button className="text-white bg-[#5271FF] text-md mb-5">
             Acesse Gratuitamente
           </Button>
-          <Button className=" bg-transparent border-2 border-[#5271FF] rounded-lg text-[#5271FF] text-md font-medium">
+          <Button className="bg-transparent border-2 border-[#5271FF] rounded-lg text-[#5271FF] text-md font-medium">
             Veja uma Demonstração
           </Button>
         </div>
       </section>
 
-      <section className="bg-[#5271FF] w-[100%] font-(family-name:--font-poppins)">
+      <section className="bg-[#5271FF] w-[100%] font-poppins">
         <div className="grid grid-cols-2 text-white pt-12">
           <div className="pl-5">
             <div className="flex items-center">
@@ -952,14 +906,16 @@ export default function Home() {
             <li className="mb-3">Ofertante</li>
             <li className="mb-3">Bronze</li>
             <li className="mb-3">Prata</li>
-            <li className="mb-3">Prata</li>
+            <li className="mb-3">Ouro</li>
             <li className="mb-15">Patriarca</li>
           </ul>
         </div>
 
-        <h3 className="text-center text-base text-white">
-          © Copyright 2025. Ecle Tech Team. Todos os direitos reservados.
-        </h3>
+        <div className="pl-5 text-white">
+          <h3 className="text-center text-base">
+            © Copyright 2025. Ecle Tech Team. Todos os direitos reservados.
+          </h3>
+        </div>
       </section>
     </main>
   );
