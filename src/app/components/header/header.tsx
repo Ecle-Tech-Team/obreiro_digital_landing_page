@@ -50,8 +50,12 @@ const Header = () => {
             </h1>
 
             <div className="ml-[8vh]">
-              <Button className="text-white bg-transparent">Faça Login</Button>
-              <Button className="text-[#5271FF] bg-white">Criar Conta</Button>
+              <Button className="text-white font-bold bg-transparent w-[17vh]">
+                Faça Login
+              </Button>
+              <Button className="text-[#5271FF] font-bold bg-white w-[17vh]">
+                Criar Conta
+              </Button>
             </div>
           </section>
           <div className="relative xl:invisible">

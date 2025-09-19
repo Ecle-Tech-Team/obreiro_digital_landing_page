@@ -90,7 +90,7 @@ export default function Home() {
     <main className="font-poppins">
       <Header />
 
-      <section className="h-[60vh] w-auto flex flex-col items-center font-poppins">
+      <section className="h-[60vh] w-auto flex flex-col items-center ">
         <div className="text-center font-extrabold mt-[5vh] xl:mt-[16vh]">
           <h1 className="text-5xl flex justify-center text-[#1E1E1E]">
             Eleve sua gestão com o
@@ -106,12 +106,12 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-[3vh] xl:mt-[6vh] flex flex-col xl:flex-row xl:items-center xl:gap-8">
-          <button className="w-[28vh] h-[5vh] bg-[#5271FF] text-white rounded-lg text-lg font-medium">
+          <Button className="w-[28vh] h-[5vh] bg-[#5271FF] text-white rounded-lg text-lg font-medium">
             Acesse Gratuitamente
-          </button>
-          <button className="mt-5 xl:mt-0 w-[28vh] h-[5vh] border-2 border-[#5271FF] rounded-lg text-[#5271FF] text-lg font-medium">
+          </Button>
+          <Button className="mt-5 xl:mt-0 w-[28vh] h-[5vh] border-2 bg-transparent border-[#5271FF] rounded-lg text-[#5271FF] text-lg font-medium">
             Veja uma demonstração
-          </button>
+          </Button>
         </div>
         <div className="mt-[3vh] w-[50vh] flex justify-evenly xl:mt-[5vh]">
           <Check />
