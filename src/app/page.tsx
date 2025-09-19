@@ -292,6 +292,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col justify-center items-center font-poppins">
+        {/* Gestão Card */}
         <Card className="w-[40vh] xl:w-[185vh] rounded-3xl h-auto bg-[#5271FF] mb-20 xl:mb-35">
           <CardContent>
             <div className="text-white text-center flex flex-col items-center font-bold">
@@ -302,41 +303,134 @@ export default function Home() {
               </h1>
             </div>
 
-            <Carousel className="mt-9">
-              <CarouselContent className="w-auto">
-                <CarouselItem className="bg-white h-auto rounded-3xl flex flex-col items-center">
-                  <h1 className="font-bold text-lg">Membros e Departamentos</h1>
-                  <Image
-                    alt="Obreiro Digital"
-                    src="/carousel.png"
-                    height={120}
-                    width={800}
-                  />
-                  <p>
-                    Gerencie todos os dados e informações de todos os membros e
-                    departamentos da sua igreja.
-                  </p>
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    alt="Obreiro Digital"
-                    src="/inicio_page.png"
-                    height={750}
-                    width={1200}
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    alt="Obreiro Digital"
-                    src="/inicio_page.png"
-                    height={750}
-                    width={1200}
-                  />
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
+            {/* Mobile: Carousel */}
+            <div className="xl:hidden mt-9">
+              <Carousel>
+                <CarouselContent className="w-auto">
+                  <CarouselItem className="bg-white h-auto rounded-3xl flex flex-col items-center">
+                    <h1 className="font-bold text-lg">
+                      Membros e Departamentos
+                    </h1>
+                    <Image
+                      alt="Obreiro Digital"
+                      src="/carousel.png"
+                      height={120}
+                      width={800}
+                    />
+                    <p>
+                      Gerencie todos os dados e informações de todos os membros
+                      e departamentos da sua igreja.
+                    </p>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <Image
+                      alt="Obreiro Digital"
+                      src="/inicio_page.png"
+                      height={750}
+                      width={1200}
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <Image
+                      alt="Obreiro Digital"
+                      src="/inicio_page.png"
+                      height={750}
+                      width={1200}
+                    />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
+
+            {/* Desktop: Grid Layout */}
+            <div className="hidden xl:grid xl:grid-cols-2 xl:gap-4 xl:mt-9">
+              <div className="bg-white h-auto rounded-3xl flex flex-col p-10">
+                <h1 className="font-bold text-2xl">Membros e Departamentos</h1>
+                <Image
+                  alt="Obreiro Digital"
+                  src="/carousel.png"
+                  height={120}
+                  width={800}
+                  className="w-full h-auto"
+                />
+                <p className="text-[#676767] font-bold">
+                  Gerencie todos os dados e informações de todos os membros e
+                  departamentos da sua igreja.
+                </p>
+              </div>
+              <div className="bg-white h-auto rounded-3xl flex flex-col p-10">
+                <h1 className="font-bold text-2xl">Gestão de Pastores</h1>
+                <Image
+                  alt="Obreiro Digital"
+                  src="/gestao de pastores.png"
+                  height={750}
+                  width={1200}
+                  className="w-full h-auto"
+                />
+                <p className="text-[#676767] font-bold">
+                  Gerencie todos os dados e acessos de todos os obreiros e
+                  voluntários da sua igreja.
+                </p>
+              </div>
+              <div className="bg-white h-auto rounded-3xl flex flex-col p-10">
+                <h1 className="font-bold text-2xl">Estoque e Pedidos</h1>
+                <Image
+                  alt="Obreiro Digital"
+                  src="/estoque.png"
+                  height={750}
+                  width={1200}
+                  className="w-full h-auto"
+                />
+                <p className="text-[#676767] font-bold">
+                  Cadastre os eventos que vão acontecer dentro e fora da sua
+                  igreja.
+                </p>
+              </div>
+              <div className="bg-white h-auto rounded-3xl flex flex-col p-10">
+                <h1 className="font-bold text-2xl">Faça Eventos</h1>
+                <Image
+                  alt="Obreiro Digital"
+                  src="/eventos.png"
+                  height={750}
+                  width={1200}
+                  className="w-full h-auto"
+                />
+                <p className="text-[#676767] font-bold">
+                  Gestão de estoque e demandas para o dia-a-dia da obra do
+                  Senhor.
+                </p>
+              </div>
+              <div className="bg-white h-auto rounded-3xl flex flex-col p-10">
+                <h1 className="font-bold text-2xl">Controle Financeiro</h1>
+                <Image
+                  alt="Obreiro Digital"
+                  src="/financeiro.png"
+                  height={750}
+                  width={1200}
+                  className="w-full h-auto"
+                />
+                <p className="text-[#676767] font-bold">
+                  Controle os gastos, saldo, doações, dízimos e todas as
+                  transações da igreja.
+                </p>
+              </div>
+              <div className="bg-white h-auto rounded-3xl flex flex-col p-10">
+                <h1 className="font-bold text-2xl">Gere Relatórios</h1>
+                <Image
+                  alt="Obreiro Digital"
+                  src="/relatorios.png"
+                  height={750}
+                  width={1200}
+                  className="w-full h-auto"
+                />
+                <p className="text-[#676767] font-bold">
+                  Gerencie todos os dados e informações de todos os membros da
+                  sua igreja.
+                </p>
+              </div>
+            </div>
 
             <div className="mt-8 flex justify-center">
               <Button className="bg-[#5271FF] border-2">
@@ -346,6 +440,7 @@ export default function Home() {
           </CardContent>
         </Card>
 
+        {/* Apoio Card */}
         <Card className="h-auto w-[40vh] xl:w-[185vh] bg-[#5271FF] rounded-3xl mb-20 xl:mb-35">
           <CardContent>
             <div className="text-white text-center flex flex-col items-center font-bold">
@@ -356,42 +451,103 @@ export default function Home() {
               </h1>
             </div>
 
-            <Carousel className="mt-9">
-              <CarouselContent className="w-auto">
-                <CarouselItem className="bg-white h-auto rounded-3xl flex flex-col items-center">
-                  <h1 className="font-bold text-lg">Gestão de Visitantes</h1>
-                  <Image
-                    className="w-[10vh]"
-                    alt="Obreiro Digital"
-                    src="/Visitantes - Obreiro.png"
-                    height={100}
-                    width={800}
-                  />
-                  <p>
-                    Registre as informações de todas as pessoas que visitaram a
-                    sua igreja.
-                  </p>
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    alt="Obreiro Digital"
-                    src="/inicio_page.png"
-                    height={120}
-                    width={800}
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    alt="Obreiro Digital"
-                    src="/inicio_page.png"
-                    height={750}
-                    width={1200}
-                  />
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
+            {/* Mobile: Carousel */}
+            <div className="xl:hidden mt-9">
+              <Carousel>
+                <CarouselContent className="w-auto">
+                  <CarouselItem className="bg-white h-auto rounded-3xl flex flex-col items-center">
+                    <h1 className="font-bold text-lg">Gestão de Visitantes</h1>
+                    <Image
+                      className="w-[10vh]"
+                      alt="Obreiro Digital"
+                      src="/Visitantes - Obreiro.png"
+                      height={100}
+                      width={800}
+                    />
+                    <p>
+                      Registre as informações de todas as pessoas que visitaram
+                      a sua igreja.
+                    </p>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <Image
+                      alt="Obreiro Digital"
+                      src="/inicio_page.png"
+                      height={120}
+                      width={800}
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <Image
+                      alt="Obreiro Digital"
+                      src="/inicio_page.png"
+                      height={750}
+                      width={1200}
+                    />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
+
+            {/* Desktop: Grid Layout */}
+            <div className="hidden xl:grid xl:grid-cols-2 xl:gap-4 xl:mt-9">
+              <div className="bg-white h-auto rounded-3xl flex flex-col items-center p-10">
+                <h1 className="font-bold text-2xl">Gestão de Visitantes</h1>
+                <Image
+                  className="w-[20vh]"
+                  alt="Obreiro Digital"
+                  src="/Visitantes - Obreiro.png"
+                  height={100}
+                  width={800}
+                />
+                <p className="text-[#676767] font-bold">
+                  Registre as informações de todas as pessoas que visitaram a
+                  sua igreja.
+                </p>
+              </div>
+              <div className="bg-white h-auto rounded-3xl flex flex-col items-center p-10">
+                <h1 className="font-bold text-2xl">Faça Pedidos</h1>
+                <Image
+                  alt="Obreiro Digital"
+                  src="/pedidos mobile.png"
+                  height={120}
+                  width={800}
+                  className="w-[20vh]"
+                />
+                <p className="text-[#676767] font-bold">
+                  Gestão de demandas para o dia-a-dia da obra do Senhor.
+                </p>
+              </div>
+              <div className="bg-white h-auto rounded-3xl flex flex-col items-center p-10">
+                <h1 className="font-bold text-2xl">Acompanhe Eventos</h1>
+                <Image
+                  alt="Obreiro Digital"
+                  src="/eventos mobile.png"
+                  height={750}
+                  width={1200}
+                  className="w-[20vh]"
+                />
+                <p className="text-[#676767] font-bold">
+                  Veja os eventos que vão acontecer dentro e fora da sua igreja.
+                </p>
+              </div>
+              <div className="bg-white h-auto rounded-3xl flex flex-col items-center p-10">
+                <h1 className="font-bold text-2xl">Registre Avisos</h1>
+                <Image
+                  alt="Obreiro Digital"
+                  src="/avisos mobile.png"
+                  height={750}
+                  width={1200}
+                  className="w-[20vh]"
+                />
+                <p className="text-[#676767] font-bold">
+                  Salve avisos importantes para o funcionamento diário para a
+                  sua igreja.
+                </p>
+              </div>
+            </div>
 
             <div className="mt-8 flex justify-center">
               <Button className="bg-[#5271FF] border-2">
