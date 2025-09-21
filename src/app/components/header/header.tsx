@@ -19,20 +19,20 @@ const Header = () => {
         <CardContent className="flex justify-between">
           <div className="flex items-center text-xl">
             <Image
-              className=" w-[100%] h-[80%]"
+              className=""
               alt="Obreiro Digital"
               src="/logo.png"
-              height={22}
+              height={48}
               width={48}
             />
 
-            <h1 className="ml-2 text-lg font-bold text-white hidden xl:block">
+            <h1 className="ml-2 text-lg/5 font-bold text-white hidden xl:block">
               OBREIRO
               <br />
               DIGITAL
             </h1>
           </div>
-          <section className="xl:flex xl:items-center w-[100%] justify-around hidden xl:block ml-[15vh] text-white font-bold font-(family-name:--font-poppins)">
+          <section className="xl:flex xl:items-center w-[100%] justify-around hidden ml-[10vh] text-white font-bold font-title text-2xl">
             <h1>
               <a href="#">Início</a>
             </h1>
@@ -49,14 +49,14 @@ const Header = () => {
               <a href="#">Planos</a>
             </h1>
 
-            <div className="ml-[8vh]">
+            {/* <div className="ml-[8vh]">
               <Button className="text-white font-bold bg-transparent w-[17vh]">
                 Faça Login
               </Button>
               <Button className="text-[#5271FF] font-bold bg-white w-[17vh]">
                 Criar Conta
               </Button>
-            </div>
+            </div> */}
           </section>
           <div className="relative xl:invisible">
             <Button
@@ -81,7 +81,7 @@ const Header = () => {
                   <li>
                     <a
                       href="#home"
-                      className="block px-4 py-2 text-lg font-bold"
+                      className="block px-4 py-2 text-xl font-bold"
                       onClick={toggleMenu}
                     >
                       Início
@@ -90,7 +90,7 @@ const Header = () => {
                   <li>
                     <a
                       href="#about"
-                      className="block px-4 py-2 text-lg font-bold"
+                      className="block px-4 py-2 text-xl font-bold"
                       onClick={toggleMenu}
                     >
                       Missão
@@ -99,7 +99,7 @@ const Header = () => {
                   <li>
                     <a
                       href="#services"
-                      className="block px-4 py-2 text-lg font-bold"
+                      className="block px-4 py-2 text-xl font-bold"
                       onClick={toggleMenu}
                     >
                       Recursos
@@ -108,7 +108,7 @@ const Header = () => {
                   <li>
                     <a
                       href="#contact"
-                      className="block px-4 py-2 text-lg font-bold"
+                      className="block px-4 py-2 text-xl font-bold"
                       onClick={toggleMenu}
                     >
                       Implementação
@@ -117,7 +117,7 @@ const Header = () => {
                   <li>
                     <a
                       href="#contact"
-                      className="block px-4 py-2 pb-4 text-lg font-bold"
+                      className="block px-4 py-2 pb-4 text-xl font-bold"
                       onClick={toggleMenu}
                     >
                       Planos
