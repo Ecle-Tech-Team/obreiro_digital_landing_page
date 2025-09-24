@@ -100,7 +100,13 @@ export default function Home() {
           </h1>
         </div>
         <div className="mt-[3vh] flex text-center">
-          <p className="font-sans font-bold text-lg">Gerencie toda a administração da sua igreja. <br className="hidden xl:block" />Com o sistema, você tem confiabilidade, segurança <br className="hidden xl:block" />e agilidade para sua gestão pastoral.</p>
+          <p className="font-sans font-bold text-lg">
+            Gerencie toda a administração da sua igreja.{" "}
+            <br className="hidden xl:block" />
+            Com o sistema, você tem confiabilidade, segurança{" "}
+            <br className="hidden xl:block" />e agilidade para sua gestão
+            pastoral.
+          </p>
         </div>
         <div className="mt-[3vh] xl:mt-[6vh] flex flex-col xl:flex-row xl:items-center xl:gap-8">
           <Button className="w-[28vh] h-[5vh] bg-[#5271FF] text-white rounded-lg text-lg font-sans font-bold">
@@ -110,7 +116,7 @@ export default function Home() {
             Veja uma demonstração
           </Button>
         </div>
-        <div className="mt-[3vh] w-[50vh] flex justify-evenly xl:mt-[5vh]">
+        <div className="mt-[3vh] w-[45vh] xl:w-[55vh] flex justify-evenly xl:mt-[5vh]">
           <Check />
           <h2 className="font-bold">Sem custo de acesso</h2>
           <Check />
@@ -141,29 +147,42 @@ export default function Home() {
                   <span className="text-[#5271FF]">Desfiliação</span>
                 </h2>
               </div>
-              <p className="font-bold font-nunito mt-[2vh] mb-[8vh]">São escândalos financeiros e abusos<br className="hidden xl:block" />espirituais por má governança dentro das <br className="hidden xl:block" />igrejas, segundo teólogos</p>
+              <p className="font-bold font-nunito mt-[2vh] mb-[8vh]">
+                São escândalos financeiros e abusos
+                <br className="hidden xl:block" />
+                espirituais por má governança dentro das{" "}
+                <br className="hidden xl:block" />
+                igrejas, segundo teólogos
+              </p>
             </CardContent>
             <CardContent className="flex flex-col text-center">
-              <h1 className="text-7xl font-bold text-[#1E1E1E]">
-                76%
-              </h1>
+              <h1 className="text-7xl font-bold text-[#1E1E1E]">76%</h1>
               <div className="flex justify-center">
                 <h2 className="text-xl font-bold text-[#1E1E1E]">
                   dos Novos <span className="text-[#5271FF]">Cristãos</span>
                 </h2>
               </div>
-              <p className="font-nunito font-bold mt-[2vh] xl:mb-0 mb-[8vh]">Em igrejas buscam informações online <br className="hidden xl:block" />(horários, programas sociais, transparência <br className="hidden xl:block" />financeira) antes de visitar uma igreja</p>
+              <p className="font-nunito font-bold mt-[2vh] xl:mb-0 mb-[8vh]">
+                Em igrejas buscam informações online{" "}
+                <br className="hidden xl:block" />
+                (horários, programas sociais, transparência{" "}
+                <br className="hidden xl:block" />
+                financeira) antes de visitar uma igreja
+              </p>
             </CardContent>
             <CardContent className="flex flex-col text-center">
-              <h1 className="text-7xl font-bold text-[#1E1E1E]">
-                3x
-              </h1>
+              <h1 className="text-7xl font-bold text-[#1E1E1E]">3x</h1>
               <div className="flex justify-center">
                 <h2 className="text-xl font-bold text-[#1E1E1E] font-poppins">
                   Mais Risco de <span className="text-[#5271FF]">Fechar</span>
                 </h2>
               </div>
-              <p className="font-bold font-nunito mt-[2vh] xl:mb-0 mb-[8vh]">Igrejas sem controle de fluxo de caixa têm <br className="hidden xl:block" />mais chance de fechar as portas em até <br className="hidden xl:block" />5 anos em média no Brasil</p>
+              <p className="font-bold font-nunito mt-[2vh] xl:mb-0 mb-[8vh]">
+                Igrejas sem controle de fluxo de caixa têm{" "}
+                <br className="hidden xl:block" />
+                mais chance de fechar as portas em até{" "}
+                <br className="hidden xl:block" />5 anos em média no Brasil
+              </p>
             </CardContent>
           </div>
         </Card>
@@ -181,16 +200,27 @@ export default function Home() {
                       <br />
                       <span className="text-[#5271FF]">Obreiro Digital?</span>
                     </h1>
-                    <h3 className="text-xl font-nunito font-bold text-[#1E1E1E]">Temos como missão não só <br className="hidden xl:block" />entregar recursos e eficiência na <br className="hidden xl:block" />gestão de igrejas, queremos elevar <br className="hidden xl:block" />o{" "}
+                    <h3 className="text-xl font-nunito font-bold text-[#1E1E1E]">
+                      Temos como missão não só{" "}
+                      <br className="hidden xl:block" />
+                      entregar recursos e eficiência na{" "}
+                      <br className="hidden xl:block" />
+                      gestão de igrejas, queremos elevar{" "}
+                      <br className="hidden xl:block" />o{" "}
                       <span className="text-[#5271FF]">
                         nível da obra do Senhor.
                       </span>
                       <br />
                       <br />
-                      Usar o Obreiro Digital não é apenas <br className="hidden xl:block" />adquirir um sistema
-                      bonito, será<br className="hidden xl:block" />{" "}
+                      Usar o Obreiro Digital não é apenas{" "}
+                      <br className="hidden xl:block" />
+                      adquirir um sistema bonito, será
+                      <br className="hidden xl:block" />{" "}
                       <span className="text-[#5271FF]">capacitar</span> Pastores
-                      e Obreiros para <br className="hidden xl:block" />trabalharem na obra do Senhor da <br className="hidden xl:block" />melhor maneira possível.
+                      e Obreiros para <br className="hidden xl:block" />
+                      trabalharem na obra do Senhor da{" "}
+                      <br className="hidden xl:block" />
+                      melhor maneira possível.
                     </h3>
                   </div>
 
@@ -202,8 +232,8 @@ export default function Home() {
                 </div>
 
                 <div className="xl:w-[120vh]">
-                  <div className="xl:flex xl:justify-evenly">
-                    <Card className="mt-11 w-[25vh] xl:w-[35vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+                  <div className="xl:flex flex items-center flex-col xl:justify-evenly xl:flex-row">
+                    <Card className="mt-11 xl:mr-7 w-[30vh] xl:w-[40vh] xl:h-[40vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
                       <CardContent>
                         <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
                           <ChartColumn />
@@ -211,11 +241,15 @@ export default function Home() {
                         <h1 className="text-2xl xl:text-xl font-bold mt-4 mb-6">
                           Gestão Via Dados
                         </h1>
-                        <p className="font-sans font-bold xl:text-md">Controle e histórico completo <br className="hidden xl:block" />de tudo o que acontece na sua <br className="hidden xl:block" />igreja, garantindo uma gestão <br className="hidden xl:block" />mais inteligente e preparada <br className="hidden xl:block" />para os avanços da sociedade</p>
+                        <p className="font-sans font-bold xl:text-md">
+                          Controle e histórico completo de tudo o que acontece
+                          na sua igreja, garantindo uma gestão mais inteligente
+                          e preparada para os avanços da sociedade
+                        </p>
                       </CardContent>
                     </Card>
 
-                    <Card className="mt-11 w-[25vh] xl:w-[35vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+                    <Card className="mt-11 xl:mr-7 w-[30vh] xl:w-[40vh] xl:h-[40vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
                       <CardContent>
                         <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
                           <Rocket />
@@ -223,13 +257,17 @@ export default function Home() {
                         <h1 className="text-2xl xl:text-xl font-bold mt-4 mb-6">
                           Eficiência e Agilidade
                         </h1>
-                        <p className="font-sans font-bold xl:text-md">O Obreiro Digital trará a <br className="hidden xl:block" />segurança de que a obra do <br className="hidden xl:block"/>Senhor está eficiente e ágil para <br className="hidden xl:block" />Pastores e Líderes de Igreja.</p>
+                        <p className="font-sans font-bold xl:text-md">
+                          O Obreiro Digital trará a segurança de que a obra do{" "}
+                          Senhor está eficiente e ágil para Pastores e Líderes
+                          de Igreja.
+                        </p>
                       </CardContent>
                     </Card>
                   </div>
 
-                  <div className="xl:flex xl:justify-evenly">
-                    <Card className="mt-11 w-[25vh] xl:w-[35vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+                  <div className="xl:flex flex items-center flex-col xl:justify-evenly xl:flex-row">
+                    <Card className="mt-11 xl:mr-7 w-[30vh] xl:w-[40vh] xl:h-[40vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
                       <CardContent>
                         <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
                           <ContactRound />
@@ -237,11 +275,16 @@ export default function Home() {
                         <h1 className="text-2xl xl:text-xl font-bold mt-4 mb-6">
                           Experiência do Usuário
                         </h1>
-                        <p className="font-sans font-bold xl:text-md">Garantiremos a melhor <br/>experiência de usuário para <br/>que seja fácil usar o sistema <br/>independente do nível técnico.</p>
+                        <p className="font-sans font-bold xl:text-md">
+                          Garantiremos a melhor <br />
+                          experiência de usuário para <br />
+                          que seja fácil usar o sistema <br />
+                          independente do nível técnico.
+                        </p>
                       </CardContent>
                     </Card>
 
-                    <Card className="mt-11 w-[25vh] xl:w-[35vh] xl:h-[40vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
+                    <Card className="mt-11 xl:mr-7 w-[30vh] xl:w-[40vh] xl:h-[40vh] bg-[#F5F5F5] text-[#1E1E1E] font-bold shadow-md">
                       <CardContent>
                         <div className="rounded-full bg-[#5271FF] w-13 h-13 text-white flex justify-center items-center">
                           <Album />
@@ -249,7 +292,11 @@ export default function Home() {
                         <h1 className="text-2xl xl:text-xl font-bold mt-4 mb-6">
                           Alfabetização Digital
                         </h1>
-                        <p className="font-sans font-bold xl:text-md">Conhecemos a falta de acesso e<br/>conhecimento em tecnologia de <br/>alguns irmãos, sabendo disso, <br/>daremos todo o suporte <br/>necessário em todas áreas.</p>
+                        <p className="font-sans font-bold xl:text-md">
+                          Conhecemos a falta de acesso e conhecimento em
+                          tecnologia de alguns irmãos, sabendo disso, daremos
+                          todo o suporte necessário em todas áreas.
+                        </p>
                       </CardContent>
                     </Card>
                   </div>
@@ -538,16 +585,22 @@ export default function Home() {
                 Confiado em <span className="text-[#5271FF]">Igrejas</span>
               </h1>
               <p className="text-md xl:text-md font-sans font-semibold w-48 xl:w-[40%] mb-11">
-                Feedback de alguns usuários que utilizaram o Obreiro Digital em <br className="hidden xl:block" />suas igrejas:
+                Feedback de alguns usuários que utilizaram o Obreiro Digital em{" "}
+                <br className="hidden xl:block" />
+                suas igrejas:
               </p>
             </div>
 
             <div className="flex flex-col xl:flex-row xl:justify-evenly items-center">
               <Card className="bg-[#F5F5F5] w-[32vh] xl:w-[50vh] xl:h-[50vh] mb-11 xl:mb-0 shadow-md">
-                <CardContent className="p-7">
-                  <h1 className="text-2xl font-bold mb-5">Me ajudou muito <br className="hidden xl:block" /> na gestão diária</h1>
+                <CardContent className="py-2">
+                  <h1 className="text-2xl font-bold mb-5">
+                    Me ajudou muito <br className="hidden xl:block" /> na gestão
+                    diária
+                  </h1>
                   <h3 className="mb-15 xl:text-lg font-sans font-semibold">
-                    “Agora tenho controle e histórico completo <br className="hidden xl:block" />de tudo o que acontece aqui na igreja”
+                    “Agora tenho controle e histórico completo de tudo o que
+                    acontece aqui na igreja”
                   </h3>
 
                   <div className="flex">
@@ -566,10 +619,15 @@ export default function Home() {
                 </CardContent>
               </Card>
               <Card className="bg-[#F5F5F5] w-[32vh] xl:w-[50vh] xl:h-[50vh] mb-11 xl:mb-0 shadow-md">
-                <CardContent className="p-7">
-                  <h1 className="text-2xl font-bold mb-5">Ampliou bastante <br className="hidden xl:block"/> minha adminstração</h1>
-                  <h3 className="mb-15 xl:text-lg font-sans font-semibold">
-                    "Minha gestão agora consegue alcançar<br className="hidden xl:block" /> muito mais pessoas com esse sistema"
+                <CardContent className="py-2">
+                  <h1 className="text-2xl font-bold mb-5">
+                    Ampliou bastante <br className="hidden xl:block" /> minha
+                    adminstração
+                  </h1>
+                  <h3 className="mb-22 xl:text-lg font-sans font-semibold">
+                    "Minha gestão agora consegue alcançar
+                    <br className="hidden xl:block" /> muito mais pessoas com
+                    esse sistema"
                   </h3>
 
                   <div className="flex">
@@ -588,10 +646,15 @@ export default function Home() {
                 </CardContent>
               </Card>
               <Card className="bg-[#F5F5F5] w-[32vh] xl:w-[50vh] xl:h-[50vh] shadow-md">
-                <CardContent className="p-7">
-                  <h1 className="text-2xl font-bold mb-5">Tenho praticidade <br className="hidden xl:block" /> no meu dia-a-dia</h1>
+                <CardContent className="py-2">
+                  <h1 className="text-2xl font-bold mb-5">
+                    Tenho praticidade <br className="hidden xl:block" /> no meu
+                    dia-a-dia
+                  </h1>
                   <h3 className="mb-15 xl:text-lg font-sans font-semibold">
-                    "Agora tenho todas as ferramentas <br className="hidden xl:block" /> de gestão da minha igreja no mesmo lugar"
+                    "Agora tenho todas as ferramentas{" "}
+                    <br className="hidden xl:block" /> de gestão da minha igreja
+                    no mesmo lugar"
                   </h3>
 
                   <div className="flex">
@@ -626,7 +689,8 @@ export default function Home() {
               </h1>
               <p className="text-sm text-sans font-semibold mt-6">
                 Esses são os passos que a igreja precisa fazer para conseguir
-                <br className="hidden xl:block" /> utilizar o Obreiro Digital dentro da gestão pastoral:
+                <br className="hidden xl:block" /> utilizar o Obreiro Digital
+                dentro da gestão pastoral:
               </p>
             </div>
             <div className="text-center xl:text-start flex flex-col items-center xl:flex-row">
@@ -697,8 +761,8 @@ export default function Home() {
 
       <section className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
         <Card className="w-[40vh] xl:w-[185vh] xl:h-[100vh] rounded-3xl xl:mb-20">
-          <CardContent className="xl:flex p-16">
-            <div className="xl:w-[50vh] xl:flex xl:flex-col xl:m-10">
+          <CardContent className="xl:flex xl:pl-10">
+            <div className="xl:w-[50vh] xl:flex xl:flex-col xl:m-10 mb-15">
               <div className="text-center xl:text-start">
                 <h3 className="text-[#676767] text-xl font-semibold">
                   Quanto custa?
@@ -708,16 +772,25 @@ export default function Home() {
 
               <div>
                 <h1 className="text-4xl font-bold mb-10">
-                  O Obreiro Digital é <br/>{" "}
+                  O Obreiro Digital é{" "}
                   <span className="text-[#5271FF]">100% gratuito!</span>
                 </h1>
                 <p className="font-sans xl:text-xl font-bold">
-                  Todos as funcionalidades de <br className="hidden xl:block" />gestão e apoio estão disponíveis <br className="hidden xl:block" />gratuitamente e{" "}
-                  <span className="text-[#5271FF]">sem limites</span><br className="hidden xl:block" /> para o uso sempre.
+                  Todos as funcionalidades de <br className="hidden xl:block" />
+                  gestão e apoio estão disponíveis{" "}
+                  <br className="hidden xl:block" />
+                  gratuitamente e{" "}
+                  <span className="text-[#5271FF]">sem limites</span>
+                  <br className="hidden xl:block" /> para o uso sempre.
                   <br />
                   <br />
-                  Nosso objetivo é alcançar o <br className="hidden xl:block" />máximo de pessoas possível <br className="hidden xl:block" /> deixando o sistema <br className="hidden xl:block" />financeiramente{" "}
-                  <span className="text-[#5271FF]">viável</span> a todos!
+                  Nosso objetivo é alcançar o <br className="hidden xl:block" />
+                  máximo de pessoas possível <br className="hidden xl:block" />{" "}
+                  deixando o sistema <br className="hidden xl:block" />
+                  financeiramente <span className="text-[#5271FF]">
+                    viável
+                  </span>{" "}
+                  a todos!
                 </p>
 
                 {/* <Button className="bg-[#5271FF] pl-6 pr-6 mt-8 mb-8 font-sans text-md font-bold">
@@ -726,7 +799,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col items-center mb-5 xl:mx-60 xl:my-25">
+            <div className="flex flex-col items-center mb-5 xl:ml-60 xl:my-25">
               <Card className="bg-[#5271FF] w-[32vh] xl:w-[60vh] xl:h-[65vh] rounded-3xl ">
                 <CardContent className="xl:my-6">
                   <div className="flex flex-row justify-center items-center">
@@ -767,7 +840,7 @@ export default function Home() {
       </section>
 
       <section className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
-        <Card className="w-[40vh] xl:w-[185vh] xl:h-[80vh] rounded-3xl xl:mb-20">
+        <Card className="w-[40vh] xl:w-[185vh] xl:h-[110vh] rounded-3xl xl:mb-20">
           <CardContent>
             <div className="text-center mb-25">
               <h3 className="text-[#676767] mt-9 text-xl font-semibold">
@@ -787,40 +860,46 @@ export default function Home() {
                       className="md:basis-1/2 xl:basis-1/3 px-2"
                     >
                       <Card
-                        className={`w-[32vh] xl:w-[45vh] rounded-3xl flex flex-col items-center ${plan.bgColor}`}
+                        className={`w-[32vh] xl:w-[45vh] rounded-3xl flex flex-col items-center ${plan.bgColor} min-h-[70vh]`}
                       >
-                        <CardContent>
-                          <div className="flex flex-row justify-center items-center mb-5">
-                            <Image
-                              className="w-[5.5vh] h-[5.5vh] mr-3"
-                              alt="Obreiro Digital"
-                              src={plan.logo}
-                              height={750}
-                              width={1200}
-                            />
-                            <h1 className="text-xl font-bold">
-                              OBREIRO
-                              <br />
-                              DIGITAL
-                            </h1>
+                        <CardContent className="flex flex-col justify-between h-full py-6">
+                          <div>
+                            <div className="flex flex-row justify-center items-center mb-5">
+                              <Image
+                                className="w-[5.5vh] h-[5.5vh] mr-3"
+                                alt="Obreiro Digital"
+                                src={plan.logo}
+                                height={750}
+                                width={1200}
+                              />
+                              <h1 className="text-xl font-bold">
+                                OBREIRO
+                                <br />
+                                DIGITAL
+                              </h1>
+                            </div>
+
+                            <div className="text-center mb-6">
+                              <h1 className="text-2xl font-bold">
+                                {plan.title}
+                              </h1>
+                              <h1 className="text-4xl font-bold">
+                                {plan.price}
+                              </h1>
+                            </div>
+
+                            <div className="flex flex-col ml-6 mb-6 font-sans font-bold text-lg min-h-[20vh]">
+                              <ul className="list-disc">
+                                {plan.features.map((feature, idx) => (
+                                  <li key={idx} className="mb-4">
+                                    {feature}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
                           </div>
 
-                          <div className="text-center mb-10">
-                            <h1 className="text-2xl font-bold">{plan.title}</h1>
-                            <h1 className="text-4xl font-bold">{plan.price}</h1>
-                          </div>
-
-                          <div className="flex flex-col ml-6 font-sans font-bold text-lg">
-                            <ul className="list-disc">
-                              {plan.features.map((feature, idx) => (
-                                <li key={idx} className="mb-4">
-                                  {feature}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-
-                          <div className="flex justify-center mt-10 font-sans font-bold">
+                          <div className="flex justify-center mt-6 font-sans font-bold">
                             <Button className={`w-[25vh] ${plan.buttonColor}`}>
                               Quero Apoiar
                             </Button>
@@ -839,40 +918,42 @@ export default function Home() {
               {plans.map((plan, index) => (
                 <Card
                   key={index}
-                  className={`w-[32vh] rounded-3xl flex flex-col items-center ${plan.bgColor}`}
+                  className={`w-[32vh] rounded-3xl flex flex-col items-center ${plan.bgColor} min-h-[70vh]`}
                 >
-                  <CardContent>
-                    <div className="flex flex-row justify-center items-center mb-5">
-                      <Image
-                        className="w-[5.5vh] h-[5.5vh] mr-3"
-                        alt="Obreiro Digital"
-                        src={plan.logo}
-                        height={750}
-                        width={1200}
-                      />
-                      <h1 className="text-xl font-bold">
-                        OBREIRO
-                        <br />
-                        DIGITAL
-                      </h1>
+                  <CardContent className="flex flex-col justify-between h-full py-6">
+                    <div>
+                      <div className="flex flex-row justify-center items-center mb-5">
+                        <Image
+                          className="w-[5.5vh] h-[5.5vh] mr-3"
+                          alt="Obreiro Digital"
+                          src={plan.logo}
+                          height={750}
+                          width={1200}
+                        />
+                        <h1 className="text-xl font-bold">
+                          OBREIRO
+                          <br />
+                          DIGITAL
+                        </h1>
+                      </div>
+
+                      <div className="text-center mb-6">
+                        <h1 className="text-2xl font-bold">{plan.title}</h1>
+                        <h1 className="text-4xl font-bold">{plan.price}</h1>
+                      </div>
+
+                      <div className="flex flex-col ml-6 font-medium min-h-[20vh]">
+                        <ul className="list-disc">
+                          {plan.features.map((feature, idx) => (
+                            <li key={idx} className="mb-4">
+                              {feature}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
 
-                    <div className="text-center mb-10">
-                      <h1 className="text-2xl font-bold">{plan.title}</h1>
-                      <h1 className="text-4xl font-bold">{plan.price}</h1>
-                    </div>
-
-                    <div className="flex flex-col ml-6 font-medium">
-                      <ul className="list-disc">
-                        {plan.features.map((feature, idx) => (
-                          <li key={idx} className="mb-4">
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="flex justify-center mt-10 font-sans font-bold">
+                    <div className="flex justify-center mt-6 font-sans font-bold">
                       <Button className={`w-[25vh] ${plan.buttonColor}`}>
                         Quero Apoiar
                       </Button>
@@ -890,11 +971,14 @@ export default function Home() {
           <CardContent className="flex flex-col xl:flex-row xl:items-center">
             <div className="xl:flex xl:flex-col xl:w-1/2 xl:ml-20">
               <h1 className="text-center xl:text-start text-3xl xl:text-4xl font-bold mb-8">
-                Precisa de uma versão <br className="hidden xl:block"/>própria do Obreiro Digital?
+                Precisa de uma versão <br className="hidden xl:block" />
+                própria do Obreiro Digital?
               </h1>
               <h3 className="font-nunito text-center xl:text-start text-lg xl:text-2xl font-semibold xl:font-medium">
-                Entre em contato conosco para <br className="hidden xl:block" />construirmos uma solução
-                específica <br className="hidden xl:block" />para a sua igreja
+                Entre em contato conosco para <br className="hidden xl:block" />
+                construirmos uma solução específica{" "}
+                <br className="hidden xl:block" />
+                para a sua igreja
               </h3>
               {/*Button desktop*/}
               <div className="hidden xl:flex items-center justify-start mt-10 mb-2">
@@ -960,7 +1044,7 @@ export default function Home() {
                 </h1>
               </div>
 
-              <div className="flex text-[#5271FF] gap-2 mt-4">
+              <div className="flex text-[#5271FF] mt-4">
                 <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
                   <Facebook className="w-6 h-6" />
                 </div>
@@ -977,15 +1061,15 @@ export default function Home() {
             </div>
 
             <div className="xl:pt-7">
-              <div className="flex items-center w-[30vh] gap-2 text-sm mb-5">
+              <div className="flex items-center gap- text-sm mb-5">
                 <Mail className="w-7 h-7" />
                 <p>ecletecnologia@gmail.com</p>
               </div>
-              <div className="flex items-center w-[30vh] gap-2 text-sm mb-5">
+              <div className="flex items-center gap- text-sm mb-5">
                 <Phone className="w-7 h-7" />
                 <p>(11) 9952-0702</p>
               </div>
-              <div className="flex items-center w-[30vh] gap-2 text-sm mb-13">
+              <div className="flex items-center gap- text-sm mb-13">
                 <Clock className="w-7 h-7" />
                 <p>Seg-Sex das 8h às 18h</p>
               </div>

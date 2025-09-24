@@ -32,7 +32,7 @@ const Header = () => {
               DIGITAL
             </h1>
           </div>
-          <section className="xl:flex xl:items-center w-[100%] justify-around hidden ml-[10vh] text-white font-bold font-title text-2xl">
+          <section className="xl:flex xl:items-center w-[100%] justify-around hidden ml-[10vh] text-white font-bold font-title text-lg">
             <h1>
               <a href="#">Início</a>
             </h1>
