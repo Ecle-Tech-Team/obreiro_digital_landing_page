@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { MenuIcon } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,21 +34,21 @@ const Header = () => {
             </h1>
           </div>
           <section className="xl:flex xl:items-center w-[100%] justify-around hidden ml-[10vh] text-white font-bold font-title text-lg">
-            <h1>
-              <a href="#">Início</a>
-            </h1>
-            <h1>
-              <a href="#">Missão</a>
-            </h1>
-            <h1>
-              <a href="#">Recursos</a>
-            </h1>
-            <h1>
-              <a href="#">Implementação</a>
-            </h1>
-            <h1>
-              <a href="#">Planos</a>
-            </h1>
+            <Link href="/">
+              <h1>Início</h1>
+            </Link>
+            <Link href="/production">
+              <h1>Missão</h1>
+            </Link>
+            <Link href="/production">
+              <h1>Recursos</h1>
+            </Link>
+            <Link href="/production">
+              <h1>Implementação</h1>
+            </Link>
+            <Link href="/production">
+              <h1>Planos</h1>
+            </Link>
 
             {/* <div className="ml-[8vh]">
               <Button className="text-white font-bold bg-transparent w-[17vh]">
@@ -80,7 +81,7 @@ const Header = () => {
                 <ul className="py-1">
                   <li>
                     <a
-                      href="#home"
+                      href="/"
                       className="block px-4 py-2 text-xl font-bold"
                       onClick={toggleMenu}
                     >
@@ -89,7 +90,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="#about"
+                      href="/production"
                       className="block px-4 py-2 text-xl font-bold"
                       onClick={toggleMenu}
                     >
@@ -98,7 +99,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="#services"
+                      href="/production"
                       className="block px-4 py-2 text-xl font-bold"
                       onClick={toggleMenu}
                     >
@@ -107,7 +108,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="#contact"
+                      href="/production"
                       className="block px-4 py-2 text-xl font-bold"
                       onClick={toggleMenu}
                     >
@@ -116,7 +117,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="#contact"
+                      href="/production"
                       className="block px-4 py-2 pb-4 text-xl font-bold"
                       onClick={toggleMenu}
                     >
