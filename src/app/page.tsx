@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/header/header";
 import Image from "next/image";
+import Link from "next/link";
 import { Check } from "lucide-react";
 import { ChartColumn } from "lucide-react";
 import { Rocket } from "lucide-react";
@@ -109,12 +110,16 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-[3vh] xl:mt-[6vh] flex flex-col xl:flex-row xl:items-center xl:gap-8">
-          <Button className="w-[28vh] h-[5vh] bg-[#5271FF] text-white rounded-lg text-lg font-sans font-bold">
-            Acesse Gratuitamente
-          </Button>
-          <Button className="mt-5 xl:mt-0 w-[28vh] h-[5vh] border-2 bg-transparent border-[#5271FF] rounded-lg text-[#5271FF] text-lg font-sans font-bold">
-            Veja uma demonstração
-          </Button>
+          <Link href="/production">
+            <Button className="w-[28vh] h-[5vh] bg-[#5271FF] text-white rounded-lg text-lg font-sans cursor-pointer font-bold">
+              Acesse Gratuitamente
+            </Button>
+          </Link>
+          <Link href="/production">
+            <Button className="mt-5 xl:mt-0 w-[28vh] h-[5vh] border-2 bg-transparent cursor-pointer border-[#5271FF] rounded-lg text-[#5271FF] text-lg font-sans font-bold">
+              Veja uma demonstração
+            </Button>
+          </Link>
         </div>
         <div className="mt-[3vh] w-[45vh] xl:w-[55vh] flex justify-evenly xl:mt-[5vh]">
           <Check />
@@ -225,9 +230,11 @@ export default function Home() {
                   </div>
 
                   <div>
-                    <Button className="bg-[#5271FF] mt-11 w-[19vh] text-md font-sans font-bold">
-                      Conheça o Projeto
-                    </Button>
+                    <Link href="/production">
+                      <Button className="bg-[#5271FF] mt-11 w-[19vh] text-md font-sans font-bold cursor-pointer">
+                        Conheça o Projeto
+                      </Button>
+                    </Link>
                   </div>
                 </div>
 
@@ -449,9 +456,11 @@ export default function Home() {
             </div>
 
             <div className="mt-8 flex justify-center">
-              <Button className="bg-[#5271FF] border-2 font-sans font-bold text-md hover:bg-white hover:text-[#5271FF] cursor-pointer">
-                Veja uma Demonstração
-              </Button>
+              <Link href="/production">
+                <Button className="bg-[#5271FF] border-2 font-sans font-bold text-md hover:bg-white hover:text-[#5271FF] cursor-pointer">
+                  Veja uma Demonstração
+                </Button>
+              </Link>
             </div>
           </CardContent>
         </Card>
@@ -566,9 +575,11 @@ export default function Home() {
             </div>
 
             <div className="mt-8 flex justify-center">
-              <Button className="bg-[#5271FF] border-2 font-sans font-bold text-md hover:bg-white hover:text-[#5271FF] cursor-pointer">
-                Veja uma Demonstração
-              </Button>
+              <Link href="/production">
+                <Button className="bg-[#5271FF] border-2 font-sans font-bold text-md hover:bg-white hover:text-[#5271FF] cursor-pointer">
+                  Veja uma Demonstração
+                </Button>
+              </Link>
             </div>
           </CardContent>
         </Card>
@@ -982,9 +993,11 @@ export default function Home() {
               </h3>
               {/*Button desktop*/}
               <div className="hidden xl:flex items-center justify-start mt-10 mb-2">
-                <Button className="bg-white text-[#5271FF] w-[20vh] text-md font-sans font-bold">
-                  Entre em Contato
-                </Button>
+                <Link href="/production">
+                  <Button className="bg-white text-[#5271FF] w-[20vh] text-md font-sans font-bold cursor-pointer">
+                    Entre em Contato
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="xl:w-[90vh] flex justify-center">
@@ -998,9 +1011,11 @@ export default function Home() {
             </div>
             {/*Button mobile*/}
             <div className="flex items-center justify-center mt-8 mb-2 xl:hidden">
-              <Button className="bg-white text-[#5271FF] w-[20vh]">
-                Entre em Contato
-              </Button>
+              <Link href="/production">
+                <Button className="bg-white text-[#5271FF] w-[20vh] cursor-pointer">
+                  Entre em Contato
+                </Button>
+              </Link>
             </div>
           </CardContent>
         </Card>
@@ -1017,12 +1032,16 @@ export default function Home() {
           </h1>
         </div>
         <div className="flex flex-col xl:flex-row xl:justify-center items-center">
-          <Button className="text-white bg-[#5271FF] text-lg font-sans font-bold mb-5 xl:mb-0 xl:mx-5">
-            Acesse Gratuitamente
-          </Button>
-          <Button className="bg-transparent border-2 border-[#5271FF] rounded-lg text-[#5271FF] text-lg font-sans font-bold">
-            Veja uma Demonstração
-          </Button>
+          <Link href="/production">
+            <Button className="text-white bg-[#5271FF] text-lg font-sans font-bold mb-5 xl:mb-0 xl:mx-5 cursor-pointer">
+              Acesse Gratuitamente
+            </Button>
+          </Link>
+          <Link href="/production">
+            <Button className="bg-transparent border-2 border-[#5271FF] rounded-lg text-[#5271FF] text-lg font-sans font-bold cursor-pointer">
+              Veja uma Demonstração
+            </Button>
+          </Link>
         </div>
       </section>
 
