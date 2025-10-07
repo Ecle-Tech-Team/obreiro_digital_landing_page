@@ -88,9 +88,9 @@ export default function Home() {
   ];
 
   return (
-    <main className="font-poppins">
+    <main className="font-poppins pt-20">
       <Header />
-
+      {/* hero */}
       <section className="h-[60vh] w-auto flex flex-col items-center ">
         <div className="text-center font-extrabold mt-[5vh] xl:mt-[16vh]">
           <h1 className="text-5xl flex justify-center text-[#1E1E1E]">
@@ -139,7 +139,7 @@ export default function Home() {
             width={1200}
           />
         </div>
-
+        
         <Card className="w-[100%] flex flex-col justify-center items-center border-0 xl:mb-15">
           <div className="xl:flex xl:items-center xl:mb-0 xl:gap-48">
             <CardContent className="flex flex-col text-center">
@@ -192,8 +192,8 @@ export default function Home() {
           </div>
         </Card>
       </section>
-
-      <section className="flex flex-col items-center mt-[12vh] mb-11  font-poppins">
+      {/* missão */}
+      <section id="missao" className="flex flex-col items-center mt-[12vh] mb-11  font-poppins">
         <div className="flex justify-center">
           <Card className="w-[40vh] xl:w-[185vh] xl:h-[100vh] rounded-3xl xl:mb-25">
             <CardContent className="flex items-center flex-col">
@@ -313,8 +313,8 @@ export default function Home() {
           </Card>
         </div>
       </section>
-
-      <section className="flex flex-col justify-center items-center font-poppins">
+      {/* recursos */}
+      <section id="recursos" className="flex flex-col justify-center items-center font-poppins">
         {/* Gestão Card */}
         <Card className="w-[40vh] xl:w-[185vh] rounded-3xl h-auto bg-[#5271FF] mb-20 xl:mb-35">
           <CardContent>
@@ -687,8 +687,8 @@ export default function Home() {
           </CardContent>
         </Card>
       </section>
-
-      <section className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
+      {/* implementação */}
+      <section id="implementacao" className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
         <Card className="w-[40vh] xl:w-[185vh] rounded-3xl xl:mb-20">
           <CardContent className="xl:px-[10vh]">
             <div className="text-center xl:text-start xl:mb-10 xl:mt-10 xl:w-[80vh]">
@@ -769,8 +769,8 @@ export default function Home() {
           </CardContent>
         </Card>
       </section>
-
-      <section className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
+      {/* planos */}
+      <section id="planos" className="mt-20 text-[#1E1E1E] font-poppins flex flex-col items-center">
         <Card className="w-[40vh] xl:w-[185vh] xl:h-[100vh] rounded-3xl xl:mb-20">
           <CardContent className="xl:flex xl:pl-10">
             <div className="xl:w-[50vh] xl:flex xl:flex-col xl:m-10 mb-15">
@@ -1063,32 +1063,40 @@ export default function Home() {
                 </h1>
               </div>
 
-              <div className="flex text-[#5271FF] mt-4">
+              <div className="flex text-[#5271FF] mt-4 gap-1">
                 <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
-                  <Facebook className="w-6 h-6" />
+                  <Link href="https://www.instagram.com/obreirodigital/">
+                    <Facebook className="w-6 h-6" />
+                  </Link>
                 </div>
                 <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
-                  <Instagram className="w-6 h-6" />
+                  <Link href="https://www.instagram.com/obreirodigital/">
+                    <Instagram className="w-6 h-6" />
+                  </Link>
                 </div>
                 <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
-                  <Linkedin className="w-6 h-6" />
+                  <Link href="https://www.linkedin.com/in/lucas-de-angelo-felipe/">
+                    <Linkedin className="w-6 h-6" />
+                  </Link>
                 </div>
                 <div className="rounded-full bg-white w-8 h-8 text-[#5271FF] flex justify-center items-center">
-                  <Github className="w-6 h-6" />
+                  <Link href="https://github.com/lucasdeangelo?tab=repositories">
+                    <Github className="w-6 h-6" />
+                  </Link>
                 </div>
               </div>
             </div>
 
             <div className="xl:pt-7">
-              <div className="flex items-center gap- text-sm mb-5">
+              <div className="flex items-center gap-1 text-sm mb-5">
                 <Mail className="w-7 h-7" />
                 <p>ecletecnologia@gmail.com</p>
               </div>
-              <div className="flex items-center gap- text-sm mb-5">
+              <div className="flex items-center gap-1 text-sm mb-5">
                 <Phone className="w-7 h-7" />
                 <p>(11) 9952-0702</p>
               </div>
-              <div className="flex items-center gap- text-sm mb-13">
+              <div className="flex items-center gap-1 text-sm mb-13">
                 <Clock className="w-7 h-7" />
                 <p>Seg-Sex das 8h às 18h</p>
               </div>

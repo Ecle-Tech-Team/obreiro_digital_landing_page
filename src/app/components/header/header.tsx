@@ -14,8 +14,16 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleMenuClick = (sectionId: string) => {
+    setIsMenuOpen(false);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="flex items-center justify-center mt-[1vh]">
+    <section className="fixed top-0 left-0 w-full z-50 flex items-center justify-center py-[1vh] bg-transparent">
       <Card className="bg-[#5271FF] w-[95%] h-[8%] rounded-3xl py-3 font-(family-name:--font-poppins)">
         <CardContent className="flex justify-between">
           <div className="flex items-center text-xl">
@@ -34,21 +42,36 @@ const Header = () => {
             </h1>
           </div>
           <section className="xl:flex xl:items-center w-[100%] justify-around hidden ml-[10vh] text-white font-bold font-title text-lg">
-            <Link href="/">
+            <button 
+              onClick={() => handleMenuClick('inicio')}
+              className="hover:text-gray-200 transition-colors cursor-pointer"
+            >
               <h1>Início</h1>
-            </Link>
-            <Link href="/production">
+            </button>
+            <button 
+              onClick={() => handleMenuClick('missao')}
+              className="hover:text-gray-200 transition-colors cursor-pointer"
+            >
               <h1>Missão</h1>
-            </Link>
-            <Link href="/production">
+            </button>
+            <button 
+              onClick={() => handleMenuClick('recursos')}
+              className="hover:text-gray-200 transition-colors cursor-pointer"
+            >
               <h1>Recursos</h1>
-            </Link>
-            <Link href="/production">
+            </button>
+            <button 
+              onClick={() => handleMenuClick('implementacao')}
+              className="hover:text-gray-200 transition-colors cursor-pointer"
+            >
               <h1>Implementação</h1>
-            </Link>
-            <Link href="/production">
+            </button>
+            <button 
+              onClick={() => handleMenuClick('planos')}
+              className="hover:text-gray-200 transition-colors cursor-pointer"
+            >
               <h1>Planos</h1>
-            </Link>
+            </button>
 
             {/* <div className="ml-[8vh]">
               <Button className="text-white font-bold bg-transparent w-[17vh]">
@@ -80,51 +103,46 @@ const Header = () => {
                 </div>
                 <ul className="py-1">
                   <li>
-                    <a
-                      href="/"
-                      className="block px-4 py-2 text-xl font-bold"
-                      onClick={toggleMenu}
+                    <button
+                      onClick={() => handleMenuClick('inicio')}
+                      className="block w-full text-left px-4 py-2 text-xl font-bold hover:bg-[#3a5aee]"
                     >
                       Início
-                    </a>
+                    </button>
                   </li>
                   <li>
-                    <a
-                      href="/production"
-                      className="block px-4 py-2 text-xl font-bold"
-                      onClick={toggleMenu}
+                    <button
+                      onClick={() => handleMenuClick('missao')}
+                      className="block w-full text-left px-4 py-2 text-xl font-bold hover:bg-[#3a5aee]"
                     >
                       Missão
-                    </a>
+                    </button>
                   </li>
                   <li>
-                    <a
-                      href="/production"
-                      className="block px-4 py-2 text-xl font-bold"
-                      onClick={toggleMenu}
+                    <button
+                      onClick={() => handleMenuClick('recursos')}
+                      className="block w-full text-left px-4 py-2 text-xl font-bold hover:bg-[#3a5aee]"
                     >
                       Recursos
-                    </a>
+                    </button>
                   </li>
                   <li>
-                    <a
-                      href="/production"
-                      className="block px-4 py-2 text-xl font-bold"
-                      onClick={toggleMenu}
+                    <button
+                      onClick={() => handleMenuClick('implementacao')}
+                      className="block w-full text-left px-4 py-2 text-xl font-bold hover:bg-[#3a5aee]"
                     >
                       Implementação
-                    </a>
+                    </button>
                   </li>
                   <li>
-                    <a
-                      href="/production"
-                      className="block px-4 py-2 pb-4 text-xl font-bold"
-                      onClick={toggleMenu}
+                    <button
+                      onClick={() => handleMenuClick('planos')}
+                      className="block w-full text-left px-4 py-2 pb-4 text-xl font-bold hover:bg-[#3a5aee]"
                     >
                       Planos
-                    </a>
+                    </button>
                   </li>
-                  <li>
+                  {/* <li>
                     <div className="flex items-center pl-3 pb-4">
                       <Button
                         className="block px-4  py-2 text-sm font-bold bg-white text-[#5271FF]"
@@ -140,7 +158,7 @@ const Header = () => {
                         Fazer Login
                       </Button>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             )}
